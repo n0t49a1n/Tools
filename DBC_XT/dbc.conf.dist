@@ -1,0 +1,19 @@
+# change it with your conf
+ [mysql]
+ host=localhost
+ user=username
+ password=password
+ database=dbc
+ port=3306
+ socket=
+ 
+ [options]
+# 0: write directly on database ; 1: write on sql file;
+ sql.create.method=1
+
+# use this to repeat the insert statment at each insertrange value
+# it's usefull to avoid mysql troubles on importing
+# if you want a single insert for all data, set it to 0 
+ sql.create.insertrange=100
+ 
+ 

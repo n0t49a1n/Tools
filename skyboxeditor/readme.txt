@@ -1,0 +1,1 @@
+helps modifying skyboxes and saves the changed dbc's into the root folder

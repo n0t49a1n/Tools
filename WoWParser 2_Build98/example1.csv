@@ -1,0 +1,4 @@
+int,string,int,byte,int,float
+1,"This is a test",1,10,1,0.54
+2,,766,0,2,-7.81
+66,"Must be ""Always""",-58,-34,99,88.88

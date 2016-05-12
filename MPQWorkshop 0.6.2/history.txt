@@ -1,0 +1,19 @@
+0.62
+----
+1.Fixed extract file bug
+2.Updated list file to Warcraft III TFT 1.15
+
+0.6
+---
+1.Support multilanguage
+2.Added tray icon
+3.Fixed some bug
+4.Changed inteface a bit
+
+0.5
+---
+First public release, implemented all operations
+
+0.3 native
+----------
+Native test version

@@ -1,0 +1,19 @@
+LICENSE
+========
+CSVed is free software. This License grants you to
+use this software free of charge for as long as you wish. 
+You may not use, copy, rent, lease, sell, modify, decompile, 
+disassemble, otherwise reverse engineer, or transfer the
+licensed program except as provided in this agreement.
+Any such unauthorized use shall result in immediate 
+and automatic termination of this license.
+All rights not expressly granted here are reserved to Sam Francke.
+
+DISCLAIMER
+==========
+CSVed IS "AS IS" AND WITHOUT ANY WARRANTY AS TO
+MERCHANTABILITY OR FITNESS FOR A PARTICULAR
+PURPOSE OR ANY OTHER WARRANTIES EITHER EXPRESSED
+OR IMPLIED.THE AUTHOR WILL NOT BE LIABLE FOR DATA 
+LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF
+LOSS WHILE USING OR MISUSING THIS SOFTWARE.

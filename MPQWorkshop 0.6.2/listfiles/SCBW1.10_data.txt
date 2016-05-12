@@ -1,0 +1,60 @@
+(listfile)
+(attributes)
+Rez\gluCmpgn.bin
+Rez\gluCreat.bin
+Rez\gluCustm.bin
+Rez\gluExpCmpgn.bin
+arr\flingy.dat
+arr\techdata.dat
+arr\units.dat
+arr\upgrades.dat
+arr\weapons.dat
+game\NConOver.pcx
+game\NConsole.pcx
+glue\Battle.net\icons\icons.pcx
+glue\ScorePd\pMain.pcx
+glue\ScorePv\pMain.pcx
+glue\ScoreTd\pMain.pcx
+glue\ScoreTv\pMain.pcx
+glue\ScoreZd\pMain.pcx
+glue\ScoreZv\pMain.pcx
+glue\selconn\pGateway.pcx
+Rez\statbtnn.bin
+Rez\gluAll_Mac.tbl
+Rez\Gateways.txt
+scripts\AISCRIPT.BIN
+scripts\ISCRIPT.BIN
+Templates\PGL(1).got
+Templates\KBK(1).got
+Templates\templates.lst
+unit\cmdbtns\cmdicons.grp
+unit\wirefram\tranwire.grp
+unit\thingy\LowM\disrupt.grp
+rez\abrtmenu.bin
+rez\allyfltr.bin
+rez\gluConn.bin
+rez\gluScore.bin
+rez\quitrepl.bin
+rez\savegame.bin
+rez\network.tbl
+rez\gluAll.tbl
+rez\stat_txt.tbl
+Templates\KBK Beginner(1).got
+Templates\KBK Game Room(1).got
+Templates\KBK Pro(1).got
+Templates\KBK Singles(1).got
+Templates\KBK Team(1).got
+Templates\KBK Zone(1).got
+Templates\Top Vs. Bottom(1).got
+Templates\Top Vs. Bottom(2).got
+Templates\Top Vs. Bottom(3).got
+Templates\Top Vs. Bottom(4).got
+Templates\Top Vs. Bottom(5).got
+Templates\Top Vs. Bottom(6).got
+Templates\Top Vs. Bottom(7).got
+dlgs\protoss.grp
+dlgs\terran.grp
+dlgs\zerg.grp
+glue\campaign\pBotL.pcx
+glue\campaign\pBotR.pcx
+glue\PalNl\Dlg.grp

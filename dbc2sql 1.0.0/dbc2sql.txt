@@ -1,0 +1,9 @@
+DBC2SQL v1.0 by thewrs <thewrs@gmail.com>
+
+Dumps DBC record data to SQL format ( badly ).
+
+Supports dbclayout.xml ( sample included ) for defining field types and names.
+
+Supports 'debug' mode ( /d option ) to dump all fields even if not present in dbclayout.xml.
+
+Yarr

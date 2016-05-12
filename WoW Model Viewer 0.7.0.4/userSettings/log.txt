@@ -1,0 +1,53 @@
+22:44:56: Starting:
+World of Warcraft Model Viewer v0.7.0.4 (Great-father Winter) Windows 32-bit
+
+
+22:44:56: Initializing Objects...
+22:44:56: Creating Anim Control...
+22:44:56: Creating Char Control...
+22:44:56: Creating Light Control...
+22:44:57: Creating Model Control...
+22:44:57: Creating Settings Control...
+22:44:57: Creating Model Bank Control...
+22:44:57: Creating Model Opened...
+22:44:57: Creating Model Export Options Control...
+22:44:57: Creating OpenGL Canvas...
+22:44:57: Initiating OpenGL...
+22:44:57: Info: GLEW successfully initiated.
+
+22:44:57: Video Renderer: GeForce GTX 680/PCIe/SSE2
+22:44:57: Video Vendor: NVIDIA Corporation
+22:44:57: Driver Version: 4.5.0 NVIDIA 347.25
+22:44:57: Support wglPixelFormat: true
+22:44:57: Support Texture Compression: true
+22:44:57: Support Multi-Textures: true
+22:44:57: Support Draw Range Elements: true
+22:44:57: Support Vertex Buffer Objects: true
+22:44:57: Support Point Sprites: true
+22:44:57: Support Pixel Shaders: true
+22:44:57: Support Vertex Shaders: true
+22:44:57: Support GLSL: true
+22:44:57: Support Anti-Aliasing: true
+22:44:57: Support Pixel Buffer Objects: true
+22:44:57: Support Frame Buffer Objects: true
+22:44:57: Support Non-Power-of-Two: true
+22:44:57: Support Rectangle Textures: true
+22:44:57: Support OpenGL 2.0: true
+22:44:57: Max Rectangle Texture Size Supported: 16384
+22:44:57: Max Texture Size Supported: 16384
+
+22:44:57: Creating OpenGL Canvas...
+22:44:57: Initiating OpenGL...
+22:44:57: Loading Session settings from: \\monsta\raid\Work\tools\WoW Model Viewer\userSettings\Config.ini
+
+22:44:57: Initializing File Menu...
+22:44:57: Initializing GUI Docking.
+22:44:57: Setting OpenGL render state...
+22:44:57: Max Lights used: 4
+22:44:57: Info: GUI Layout loaded from previous session.
+22:44:57: WoW Model Viewer successfully loaded!
+----
+
+22:45:47: Shuting down the program...
+
+22:45:47: Info: GUI Layout was saved.

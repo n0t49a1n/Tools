@@ -1,0 +1,29 @@
+<MyWarCraftStudio>
+	<WoW DataPath="E:\Games\World of Warcraft\Data\enUS\"/>
+	<LastOption>
+		<mpqTreeView ShowType="*"/>
+		<CraftView BackColor="10053222" Default="10053222"/>
+		<RenderEngine API="OpenGL" API2="DirectX"/>
+	</LastOption>
+	<ExtIDMap>
+		<MDX Ext="m2" Desc="M2 Model" ProductID="MDX2"/>
+		<MDX Ext="mdx" Desc="Mdx Model" ProductID="MDLX"/>
+		<MDX Ext="blp" Desc="Texture" ProductID="WTEX"/>
+		<MDX Ext="dbc" Desc="Database Cache" ProductID="WDBC"/>
+		<MDX Ext="xml" Desc="XML UI" ProductID="CHAT"/>
+		<MDX Ext="ttf" Desc="Font" ProductID="FONT"/>
+		<MDX Ext="wdl" Desc="Landscape Terrain" ProductID="WDLX"/>
+		<MDX Ext="wdt" Desc="Terrain" ProductID="WDTX"/>
+		<MDX Ext="wmo" Desc="World Model Object" ProductID="WMOX"/>
+		<MDX Ext="adt" Desc="World Terrain" ProductID="ADTX"/>
+		<MDX Ext="mp3" Desc="MP3 Music" ProductID="SOND"/>
+		<MDX Ext="wav" Desc="WAV Sound" ProductID="SOND"/>
+		<MDX Ext="oglvs" Desc="OpenGL Vertex Shader" ProductID="GLVS"/>
+	</ExtIDMap>
+	<CraftPlugin>
+		<Plugin ModuleName="CursorCraft.dll"/>
+		<Plugin ModuleName="BLPCraft.dll"/>
+		<Plugin ModuleName="DBCCraft.dll"/>
+		<Plugin ModuleName="M2Craft.dll"/>
+	</CraftPlugin>
+</MyWarCraftStudio>

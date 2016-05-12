@@ -1,0 +1,9 @@
+﻿<?xml version="1.0"?>
+<DBFilesClient>
+	<SpellRange>
+		<field_1 type="integer" index="primary">id</field_1>
+		<field_2 type="float">min</field_2>
+		<field_3 type="float">max</field_3>
+		<field_5 type="string">name</field_5>
+	</SpellRange>
+</DBFilesClient>

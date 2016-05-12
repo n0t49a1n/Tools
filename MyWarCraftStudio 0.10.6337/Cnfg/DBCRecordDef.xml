@@ -1,0 +1,778 @@
+<DBCCraft>
+	<AnimationData.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</AnimationData.dbc>
+	<AreaPOI.dbc>
+		<Filed0 Title="id"/>
+		<Filed4 Title="x" Type="1"/>
+		<Filed5 Title="y" Type="1"/>
+		<Filed6 Title="z" Type="1"/>
+		<Filed10 Title="name" Type="2"/>
+	</AreaPOI.dbc>
+	<AreaTable.dbc>
+		<Filed0 Title="id"/>
+		<Filed11 Title="name" Type="2"/>
+	</AreaTable.dbc>
+	<AreaTrigger.dbc>
+		<Filed0 Title="id"/>
+		<Filed2 Title="x" Type="1"/>
+		<Filed3 Title="y" Type="1"/>
+		<Filed4 Title="z" Type="1"/>
+		<Filed5 Type="1"/>
+		<Filed6 Type="1"/>
+		<Filed7 Type="1"/>
+		<Filed8 Type="1"/>
+		<Filed9 Type="1"/>
+	</AreaTrigger.dbc>
+	<AttackAnimKits.dbc>
+		<Filed0 Title="id"/>
+	</AttackAnimKits.dbc>
+	<AttackAnimTypes.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</AttackAnimTypes.dbc>
+	<AuctionHouse.dbc>
+		<Filed0 Title="id"/>
+		<Filed4 Title="name" Type="2"/>
+	</AuctionHouse.dbc>
+	<BankBagSlotPrices.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="price"/>
+	</BankBagSlotPrices.dbc>
+	<CameraShakes.dbc>
+		<Filed0 Title="id"/>
+		<Filed3 Type="1"/>
+		<Filed4 Type="1"/>
+		<Filed5 Type="1"/>
+		<Filed6 Type="1"/>
+		<Filed7 Type="1"/>
+	</CameraShakes.dbc>
+	<Cfg_Categories.dbc>
+		<Filed0 Title="id1"/>
+		<Filed1 Title="id2"/>
+		<Filed2 Title="name" Type="2"/>
+	</Cfg_Categories.dbc>
+	<CharBaseInfo.dbc/>
+	<CharHairGeosets.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="Race"/>
+		<Filed2 Title="Gender"/>
+		<Filed3 Title="Section"/>
+		<Filed4 Title="Geoset"/>
+		<Filed5 Title="Flags"/>
+	</CharHairGeosets.dbc>
+	<CharHairTextures.dbc>
+		<Filed0 Title="id"/>
+	</CharHairTextures.dbc>
+	<CharSections.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="Race"/>
+		<Filed2 Title="Gender"/>
+		<Filed3 Title="VarianceType"/>
+		<Filed4 Title="StyleType"/>
+		<Filed5 Title="ColorType"/>
+		<Filed6 Title="texture" Type="2"/>
+		<Filed7 Title="texture" Type="2"/>
+		<Filed8 Title="texture" Type="2"/>
+		<Filed9 Title="IsNpc"/>
+	</CharSections.dbc>
+	<CharStartOutfit.dbc>
+		<Filed0 Title="id"/>
+	</CharStartOutfit.dbc>
+	<CharVariations.dbc>
+		<Filed1 Title="sex"/>
+	</CharVariations.dbc>
+	<CharacterCreateCameras.dbc>
+		<Filed1 Title="id2"/>
+		<Filed2 Title="id3"/>
+		<Filed3 Type="1"/>
+		<Filed4 Type="1"/>
+		<Filed5 Type="1"/>
+	</CharacterCreateCameras.dbc>
+	<CharacterFacialHairStyles.dbc>
+		<Filed0 Title="Race"/>
+		<Filed1 Title="Gender"/>
+		<Filed2 Title="Style"/>
+		<Filed6 Title="Geoset100"/>
+		<Filed7 Title="Geoset300"/>
+		<Filed8 Title="Geoset200"/>
+	</CharacterFacialHairStyles.dbc>
+	<ChatChannels.dbc>
+		<Filed0 Title="id"/>
+		<Filed3 Title="pattern" Type="2"/>
+		<Filed12 Title="name" Type="2"/>
+	</ChatChannels.dbc>
+	<ChatProfanity.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="pattern" Type="2"/>
+	</ChatProfanity.dbc>
+	<ChrClasses.dbc>
+		<Filed0 Title="id"/>
+		<Filed5 Title="name" Type="2"/>
+		<Filed14 Title="internal" Type="2"/>
+	</ChrClasses.dbc>
+	<ChrRaces.dbc>
+		<Filed0 Title="id"/>
+		<Filed6 Title="shortname" Type="2"/>
+		<Filed7 Type="1"/>
+		<Filed15 Type="2"/>
+		<Filed17 Title="name" Type="2"/>
+		<Filed26 Type="2"/>
+		<Filed27 Type="2"/>
+		<Filed28 Type="2"/>
+	</ChrRaces.dbc>
+	<CinematicCamera.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="filename" Type="2"/>
+		<Filed3 Title="x" Type="1"/>
+		<Filed4 Title="y" Type="1"/>
+		<Filed5 Type="1"/>
+		<Filed6 Title="z" Type="1"/>
+	</CinematicCamera.dbc>
+	<CinematicSequences.dbc>
+		<Filed0 Title="id"/>
+	</CinematicSequences.dbc>
+	<CreatureDisplayInfo.dbc>
+		<Filed0 Title="id"/>
+		<Filed4 Type="1"/>
+		<Filed6 Type="2"/>
+		<Filed7 Type="2"/>
+		<Filed8 Type="2"/>
+	</CreatureDisplayInfo.dbc>
+	<CreatureDisplayInfoExtra.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="Race"/>
+		<Filed2 Title="Sex"/>
+		<Filed3 Title="Column"/>
+		<Filed5 Title="HairType"/>
+		<Filed6 Title="Column7"/>
+		<Filed7 Title="BeardStyle"/>
+		<Filed8 Title="Helm"/>
+		<Filed9 Title="Shoulder"/>
+		<Filed10 Title="Shirt"/>
+		<Filed11 Title="Cuirass"/>
+		<Filed12 Title="Belt"/>
+		<Filed13 Title="Leg"/>
+		<Filed14 Title="Boot"/>
+		<Filed15 Title="Ring"/>
+		<Filed16 Title="Glove"/>
+		<Filed17 Title="Wrist"/>
+		<Filed18 Title="filename" Type="2"/>
+	</CreatureDisplayInfoExtra.dbc>
+	<CreatureFamily.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Type="1"/>
+		<Filed3 Type="1"/>
+		<Filed8 Title="name" Type="2"/>
+		<Filed17 Title="filename" Type="2"/>
+	</CreatureFamily.dbc>
+	<CreatureModelData.dbc>
+		<Filed0 Title="id"/>
+		<Filed2 Title="filename" Type="2"/>
+		<Filed4 Type="1"/>
+		<Filed7 Type="1"/>
+		<Filed8 Type="1"/>
+		<Filed9 Type="1"/>
+		<Filed14 Type="1"/>
+		<Filed15 Type="1"/>
+	</CreatureModelData.dbc>
+	<CreatureSoundData.dbc>
+		<Filed0 Title="id"/>
+	</CreatureSoundData.dbc>
+	<CreatureType.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</CreatureType.dbc>
+	<DeathThudLookups.dbc>
+		<Filed0 Title="id"/>
+	</DeathThudLookups.dbc>
+	<DurabilityCosts.dbc>
+		<Filed0 Title="id"/>
+	</DurabilityCosts.dbc>
+	<DurabilityQuality.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="multiplier?" Type="1"/>
+	</DurabilityQuality.dbc>
+	<Emotes.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="internal" Type="2"/>
+	</Emotes.dbc>
+	<EmotesText.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="internal" Type="2"/>
+		<Filed3 Title="->"/>
+		<Filed4 Title="->"/>
+		<Filed5 Title="->"/>
+		<Filed7 Title="->"/>
+		<Filed9 Title="->"/>
+		<Filed11 Title="->"/>
+		<Filed12 Title="->"/>
+		<Filed15 Title="->"/>
+	</EmotesText.dbc>
+	<EmotesTextData.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="text" Type="2"/>
+	</EmotesTextData.dbc>
+	<EmotesTextSound.dbc>
+		<Filed0 Title="id"/>
+		<Filed3 Title="sex"/>
+	</EmotesTextSound.dbc>
+	<Exhaustion.dbc>
+		<Filed0 Title="id"/>
+		<Filed2 Type="1"/>
+		<Filed3 Type="1"/>
+		<Filed4 Type="1"/>
+		<Filed5 Title="name" Type="2"/>
+		<Filed14 Type="1"/>
+	</Exhaustion.dbc>
+	<Faction.dbc>
+		<Filed0 Title="id"/>
+		<Filed19 Title="name" Type="2"/>
+	</Faction.dbc>
+	<FactionGroup.dbc>
+		<Filed0 Title="id"/>
+		<Filed2 Title="name" Type="2"/>
+		<Filed3 Type="2"/>
+	</FactionGroup.dbc>
+	<FactionTemplate.dbc>
+		<Filed0 Title="id"/>
+		<Filed3 Title="fightsupport"/>
+		<Filed4 Title="friendly"/>
+		<Filed5 Title="hostile"/>
+	</FactionTemplate.dbc>
+	<FootprintTextures.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="filename" Type="2"/>
+	</FootprintTextures.dbc>
+	<FootstepTerrainLookup.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="->"/>
+	</FootstepTerrainLookup.dbc>
+	<GMTicketCategory.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</GMTicketCategory.dbc>
+	<GameObjectDisplayInfo.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="filename" Type="2"/>
+	</GameObjectDisplayInfo.dbc>
+	<GroundEffectDoodad.dbc>
+		<Filed0 Title="id"/>
+		<Filed2 Title="filename" Type="2"/>
+	</GroundEffectDoodad.dbc>
+	<GroundEffectTexture.dbc>
+		<Filed0 Title="id"/>
+		<Filed4 Title="filename" Type="2"/>
+	</GroundEffectTexture.dbc>
+	<HelmetGeosetVisData.dbc>
+		<Filed0 Title="id"/>
+	</HelmetGeosetVisData.dbc>
+	<ItemClass.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="subclass?"/>
+		<Filed2 Type="2"/>
+		<Filed3 Title="name" Type="2"/>
+	</ItemClass.dbc>
+	<ItemDisplayInfo.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="Left" Type="2"/>
+		<Filed2 Title="Right" Type="2"/>
+		<Filed3 Title="Left" Type="2"/>
+		<Filed4 Title="Right" Type="2"/>
+		<Filed5 Title="internal" Type="2"/>
+		<Filed6 Title="ChunkShape"/>
+		<Filed8 Title="PantShape"/>
+		<Filed14 Title="Arm" Type="2"/>
+		<Filed15 Title="Arm" Type="2"/>
+		<Filed16 Title="Hand" Type="2"/>
+		<Filed17 Title="Torso" Type="2"/>
+		<Filed18 Title="Torso" Type="2"/>
+		<Filed19 Title="Leg" Type="2"/>
+		<Filed20 Title="Leg" Type="2"/>
+		<Filed21 Title="Foot" Type="2"/>
+	</ItemDisplayInfo.dbc>
+	<ItemGroupSounds.dbc>
+		<Filed0 Title="id"/>
+	</ItemGroupSounds.dbc>
+	<ItemPetFood.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</ItemPetFood.dbc>
+	<ItemRandomProperties.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Type="2"/>
+		<Filed7 Title="suffix" Type="2"/>
+	</ItemRandomProperties.dbc>
+	<ItemSet.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+		<Filed10 Title="item"/>
+		<Filed11 Title="item"/>
+		<Filed12 Title="item"/>
+		<Filed13 Title="item"/>
+		<Filed14 Title="item"/>
+		<Filed15 Title="item"/>
+		<Filed16 Title="item"/>
+		<Filed17 Title="item"/>
+	</ItemSet.dbc>
+	<ItemSubClass.dbc>
+		<Filed0 Title="id1"/>
+		<Filed1 Title="id2"/>
+		<Filed10 Title="name" Type="2"/>
+		<Filed19 Title="desc" Type="2"/>
+	</ItemSubClass.dbc>
+	<ItemSubClassMask.dbc>
+		<Filed2 Title="name" Type="2"/>
+	</ItemSubClassMask.dbc>
+	<ItemVisualEffects.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="filename" Type="2"/>
+	</ItemVisualEffects.dbc>
+	<ItemVisuals.dbc>
+		<Filed0 Title="id"/>
+	</ItemVisuals.dbc>
+	<LanguageWords.dbc>
+		<Filed0 Title="id"/>
+		<Filed2 Title="text" Type="2"/>
+	</LanguageWords.dbc>
+	<Languages.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</Languages.dbc>
+	<LoadingScreenTaxiSplines.dbc>
+		<Filed0 Title="id"/>
+		<Filed2 Type="1"/>
+		<Filed3 Type="1"/>
+		<Filed4 Type="1"/>
+		<Filed5 Type="1"/>
+		<Filed6 Type="1"/>
+		<Filed7 Type="1"/>
+		<Filed8 Type="1"/>
+		<Filed10 Type="1"/>
+		<Filed11 Type="1"/>
+		<Filed12 Type="1"/>
+		<Filed13 Type="1"/>
+		<Filed14 Type="1"/>
+		<Filed15 Type="1"/>
+		<Filed16 Type="1"/>
+	</LoadingScreenTaxiSplines.dbc>
+	<LoadingScreens.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+		<Filed2 Title="filename" Type="2"/>
+	</LoadingScreens.dbc>
+	<Lock.dbc>
+		<Filed0 Title="id"/>
+	</Lock.dbc>
+	<LockType.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+		<Filed10 Type="2"/>
+		<Filed19 Type="2"/>
+		<Filed28 Type="2"/>
+	</LockType.dbc>
+	<Map.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="internal" Type="2"/>
+		<Filed2 Type="2"/>
+		<Filed3 Title="name" Type="2"/>
+		<Filed12 Type="2"/>
+		<Filed13 Type="2"/>
+		<Filed15 Type="1"/>
+		<Filed16 Type="1"/>
+		<Filed18 Title="text" Type="2"/>
+		<Filed27 Title="text" Type="2"/>
+	</Map.dbc>
+	<Material.dbc>
+		<Filed0 Title="id"/>
+	</Material.dbc>
+	<NPCSounds.dbc>
+		<Filed0 Title="id"/>
+	</NPCSounds.dbc>
+	<NameGen.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="text" Type="2"/>
+		<Filed3 Title="sex"/>
+	</NameGen.dbc>
+	<NamesProfanity.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="pattern" Type="2"/>
+	</NamesProfanity.dbc>
+	<NamesReserved.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="pattern" Type="2"/>
+	</NamesReserved.dbc>
+	<Package.dbc>
+		<Filed0 Title="id" Type="1"/>
+		<Filed1 Type="2"/>
+		<Filed2 Type="1"/>
+		<Filed3 Title="name" Type="2"/>
+		<Filed11 Type="1"/>
+	</Package.dbc>
+	<PageTextMaterial.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</PageTextMaterial.dbc>
+	<PaperDollItemFrame.dbc>
+		<Filed0 Title="name" Type="2"/>
+		<Filed1 Title="filename" Type="2"/>
+		<Filed2 Title="id"/>
+	</PaperDollItemFrame.dbc>
+	<PetLoyalty.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</PetLoyalty.dbc>
+	<PetPersonality.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+		<Filed13 Type="1"/>
+		<Filed14 Type="1"/>
+		<Filed15 Type="1"/>
+		<Filed16 Type="1"/>
+		<Filed17 Type="1"/>
+		<Filed18 Type="1"/>
+	</PetPersonality.dbc>
+	<QuestInfo.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</QuestInfo.dbc>
+	<QuestSort.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</QuestSort.dbc>
+	<Resistances.dbc>
+		<Filed0 Title="id"/>
+		<Filed3 Title="name" Type="2"/>
+	</Resistances.dbc>
+	<ServerMessages.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="text" Type="2"/>
+	</ServerMessages.dbc>
+	<SheatheSoundLookups.dbc>
+		<Filed0 Title="id"/>
+	</SheatheSoundLookups.dbc>
+	<SkillCostsData.dbc>
+		<Filed0 Title="id"/>
+	</SkillCostsData.dbc>
+	<SkillLine.dbc>
+		<Filed0 Title="id"/>
+		<Filed3 Title="name" Type="2"/>
+		<Filed12 Title="desc" Type="2"/>
+	</SkillLine.dbc>
+	<SkillLineAbility.dbc>
+		<Filed0 Title="id"/>
+	</SkillLineAbility.dbc>
+	<SkillLineCategory.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</SkillLineCategory.dbc>
+	<SkillRaceClassInfo.dbc>
+		<Filed0 Title="id"/>
+	</SkillRaceClassInfo.dbc>
+	<SkillTiers.dbc>
+		<Filed0 Title="id"/>
+	</SkillTiers.dbc>
+	<SoundAmbience.dbc>
+		<Filed0 Title="id"/>
+	</SoundAmbience.dbc>
+	<SoundCharacterMacroLines.dbc>
+		<Filed0 Title="id"/>
+	</SoundCharacterMacroLines.dbc>
+	<SoundEntries.dbc>
+		<Filed0 Title="id"/>
+		<Filed2 Type="2"/>
+		<Filed3 Type="2"/>
+		<Filed4 Type="2"/>
+		<Filed5 Type="2"/>
+		<Filed6 Type="2"/>
+		<Filed7 Type="2"/>
+		<Filed8 Type="2"/>
+		<Filed9 Type="2"/>
+		<Filed10 Type="2"/>
+		<Filed11 Type="2"/>
+		<Filed12 Type="2"/>
+		<Filed23 Title="path" Type="2"/>
+		<Filed24 Type="1"/>
+		<Filed26 Type="1"/>
+		<Filed27 Type="1"/>
+	</SoundEntries.dbc>
+	<SoundProviderPreferences.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+		<Filed4 Type="1"/>
+		<Filed5 Type="1"/>
+		<Filed6 Type="1"/>
+		<Filed9 Type="1"/>
+		<Filed14 Type="1"/>
+		<Filed15 Type="1"/>
+		<Filed17 Type="1"/>
+		<Filed18 Type="1"/>
+		<Filed19 Type="1"/>
+		<Filed20 Type="1"/>
+		<Filed21 Type="1"/>
+		<Filed22 Type="1"/>
+		<Filed23 Type="1"/>
+	</SoundProviderPreferences.dbc>
+	<SoundSamplePreferences.dbc>
+		<Filed0 Title="id"/>
+		<Filed6 Type="1"/>
+		<Filed8 Type="1"/>
+		<Filed9 Type="1"/>
+		<Filed11 Type="1"/>
+		<Filed13 Type="1"/>
+		<Filed14 Type="1"/>
+		<Filed15 Type="1"/>
+	</SoundSamplePreferences.dbc>
+	<SoundWaterType.dbc>
+		<Filed0 Title="id"/>
+	</SoundWaterType.dbc>
+	<Spell.dbc>
+		<Filed0 Title="id"/>
+		<Filed17 Title="cooldown"/>
+		<Filed29 Title="manacost"/>
+		<Filed34 Type="1"/>
+		<Filed37 Title="tool"/>
+		<Filed38 Title="tool"/>
+		<Filed39 Title="reagent"/>
+		<Filed40 Title="reagent"/>
+		<Filed41 Title="reagent"/>
+		<Filed42 Title="reagent"/>
+		<Filed43 Title="reagent"/>
+		<Filed44 Title="reagent"/>
+		<Filed45 Title="reagent"/>
+		<Filed46 Title="reagent"/>
+		<Filed47 Title="count"/>
+		<Filed48 Title="count"/>
+		<Filed49 Title="count"/>
+		<Filed50 Title="count"/>
+		<Filed51 Title="count"/>
+		<Filed52 Title="count"/>
+		<Filed53 Title="count"/>
+		<Filed54 Title="count"/>
+		<Filed69 Type="1"/>
+		<Filed70 Type="1"/>
+		<Filed71 Type="1"/>
+		<Filed90 Type="1"/>
+		<Filed91 Type="1"/>
+		<Filed105 Type="1"/>
+		<Filed113 Title="name" Type="2"/>
+		<Filed122 Title="rank" Type="2"/>
+		<Filed131 Title="spell" Type="2"/>
+		<Filed140 Title="spell" Type="2"/>
+	</Spell.dbc>
+	<SpellAuraNames.dbc>
+		<Filed0 Title="id"/>
+		<Filed2 Title="internal" Type="2"/>
+		<Filed3 Title="name" Type="2"/>
+	</SpellAuraNames.dbc>
+	<SpellCastTimes.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="time"/>
+	</SpellCastTimes.dbc>
+	<SpellCategory.dbc>
+		<Filed0 Title="id"/>
+	</SpellCategory.dbc>
+	<SpellChainEffects.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Type="1"/>
+		<Filed2 Type="1"/>
+		<Filed4 Type="1"/>
+		<Filed7 Title="filename" Type="2"/>
+	</SpellChainEffects.dbc>
+	<SpellDispelType.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</SpellDispelType.dbc>
+	<SpellDuration.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="duration"/>
+	</SpellDuration.dbc>
+	<SpellEffectCameraShakes.dbc>
+		<Filed0 Title="id"/>
+	</SpellEffectCameraShakes.dbc>
+	<SpellEffectNames.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</SpellEffectNames.dbc>
+	<SpellFocusObject.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</SpellFocusObject.dbc>
+	<SpellIcon.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="filename" Type="2"/>
+	</SpellIcon.dbc>
+	<SpellItemEnchantment.dbc>
+		<Filed0 Title="id"/>
+		<Filed13 Title="desc" Type="2"/>
+	</SpellItemEnchantment.dbc>
+	<SpellRadius.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="radius" Type="1"/>
+		<Filed3 Type="1"/>
+	</SpellRadius.dbc>
+	<SpellRange.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Type="1"/>
+		<Filed2 Title="range" Type="1"/>
+		<Filed3 Type="2"/>
+		<Filed4 Title="name" Type="2"/>
+		<Filed13 Title="shortname" Type="2"/>
+	</SpellRange.dbc>
+	<SpellShapeshiftForm.dbc>
+		<Filed0 Title="id"/>
+		<Filed2 Title="name" Type="2"/>
+	</SpellShapeshiftForm.dbc>
+	<SpellVisual.dbc>
+		<Filed0 Title="id"/>
+	</SpellVisual.dbc>
+	<SpellVisualEffectName.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+		<Filed2 Title="filename" Type="2"/>
+		<Filed4 Type="1"/>
+	</SpellVisualEffectName.dbc>
+	<SpellVisualKit.dbc>
+		<Filed0 Title="id"/>
+		<Filed24 Type="1"/>
+		<Filed25 Type="1"/>
+		<Filed28 Type="1"/>
+		<Filed29 Type="1"/>
+		<Filed31 Type="1"/>
+		<Filed32 Type="1"/>
+	</SpellVisualKit.dbc>
+	<SpellVisualPrecastTransitions.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="load" Type="2"/>
+		<Filed2 Title="hold" Type="2"/>
+	</SpellVisualPrecastTransitions.dbc>
+	<StableSlotPrices.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="price"/>
+	</StableSlotPrices.dbc>
+	<Startup_Strings.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+		<Filed2 Title="text" Type="2"/>
+	</Startup_Strings.dbc>
+	<Stationery.dbc>
+		<Filed2 Type="2"/>
+		<Filed3 Type="2"/>
+	</Stationery.dbc>
+	<StringLookups.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="text" Type="2"/>
+	</StringLookups.dbc>
+	<Talent.dbc>
+		<Filed0 Title="id"/>
+	</Talent.dbc>
+	<TalentTab.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+		<Filed14 Title="internal" Type="2"/>
+	</TalentTab.dbc>
+	<TaxiNodes.dbc>
+		<Filed0 Title="id"/>
+		<Filed2 Title="x" Type="1"/>
+		<Filed3 Title="y" Type="1"/>
+		<Filed4 Title="z" Type="1"/>
+		<Filed5 Title="name" Type="2"/>
+	</TaxiNodes.dbc>
+	<TaxiPath.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="->"/>
+		<Filed2 Title="->"/>
+	</TaxiPath.dbc>
+	<TaxiPathNode.dbc>
+		<Filed0 Title="id"/>
+		<Filed4 Title="x" Type="1"/>
+		<Filed5 Title="y" Type="1"/>
+		<Filed6 Title="z" Type="1"/>
+	</TaxiPathNode.dbc>
+	<TerrainType.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</TerrainType.dbc>
+	<TransportAnimation.dbc>
+		<Filed0 Title="id"/>
+	</TransportAnimation.dbc>
+	<UISoundLookups.dbc>
+		<Filed0 Title="id"/>
+		<Filed2 Title="internal" Type="2"/>
+	</UISoundLookups.dbc>
+	<UnitBlood.dbc>
+		<Filed0 Title="id"/>
+		<Filed5 Title="texture" Type="2"/>
+		<Filed6 Title="texture" Type="2"/>
+		<Filed7 Title="texture" Type="2"/>
+		<Filed8 Title="texture" Type="2"/>
+	</UnitBlood.dbc>
+	<UnitBloodLevels.dbc>
+		<Filed0 Title="id"/>
+	</UnitBloodLevels.dbc>
+	<VideoHardware.dbc>
+		<Filed0 Title="id"/>
+		<Filed18 Type="2"/>
+	</VideoHardware.dbc>
+	<VocalUISounds.dbc>
+		<Filed0 Title="id"/>
+	</VocalUISounds.dbc>
+	<WMOAreaTable.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="chunk"/>
+		<Filed11 Title="name" Type="2"/>
+	</WMOAreaTable.dbc>
+	<WeaponImpactSounds.dbc>
+		<Filed0 Title="id"/>
+	</WeaponImpactSounds.dbc>
+	<WeaponSwingSounds2.dbc>
+		<Filed0 Title="id"/>
+	</WeaponSwingSounds2.dbc>
+	<WorldMapArea.dbc>
+		<Filed0 Title="id"/>
+		<Filed3 Title="internal" Type="2"/>
+		<Filed4 Title="y1" Type="1"/>
+		<Filed5 Title="y2" Type="1"/>
+		<Filed6 Title="x1" Type="1"/>
+		<Filed7 Title="x2" Type="1"/>
+	</WorldMapArea.dbc>
+	<WorldMapContinent.dbc>
+		<Filed0 Title="id"/>
+		<Filed6 Type="1"/>
+		<Filed7 Type="1"/>
+		<Filed8 Type="1"/>
+		<Filed9 Title="x1" Type="1"/>
+		<Filed10 Title="y1" Type="1"/>
+		<Filed11 Title="x2" Type="1"/>
+		<Filed12 Title="y2" Type="1"/>
+	</WorldMapContinent.dbc>
+	<WorldMapOverlay.dbc>
+		<Filed0 Title="id"/>
+		<Filed8 Title="internal" Type="2"/>
+		<Filed11 Title="x"/>
+		<Filed12 Title="y"/>
+	</WorldMapOverlay.dbc>
+	<WorldSafeLocs.dbc>
+		<Filed0 Title="id"/>
+		<Filed2 Title="x" Type="1"/>
+		<Filed3 Title="y" Type="1"/>
+		<Filed4 Title="z" Type="1"/>
+		<Filed5 Title="name" Type="2"/>
+	</WorldSafeLocs.dbc>
+	<WowError_Strings.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="internal" Type="2"/>
+		<Filed2 Title="text" Type="2"/>
+	</WowError_Strings.dbc>
+	<ZoneIntroMusicTable.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+		<Filed2 Title="->"/>
+		<Filed3 Type="2"/>
+	</ZoneIntroMusicTable.dbc>
+	<ZoneMusic.dbc>
+		<Filed0 Title="id"/>
+		<Filed1 Title="name" Type="2"/>
+	</ZoneMusic.dbc>
+</DBCCraft>

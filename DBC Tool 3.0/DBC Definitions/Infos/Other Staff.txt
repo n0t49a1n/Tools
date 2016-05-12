@@ -1,0 +1,218 @@
+*--Anyone can help on changing the cooldown of spell? What column I need to patch to remove the cooldown? 
+-try 17 and 18 first. if it doesnt work try 154 and 155
+
+
+
+
+*--I'd like to see same-faction PVP... working spells and whatnot. Any ideas?
+-you have to modify fields called implicitTargetB. its field nr 80 or smt near it. putting value 16 there should work
+
+
+
+*--I have heard that some server have a stone to remove ressurection sickness, I would like to make one for my server. Anyone here can help? Thanks in advance.
+-
+[item 29494]
+name=Resurrection Sickness Removal Stone
+description=Right click me, then right click the icon in the right corner
+class=15
+quality=1
+bonding=0
+classes=0000 //All Classes
+flags=64
+level=1
+material=-1
+maxcount=1
+model=6418
+races=0000 //All Races
+spell=15007 0 0 0 330 60000
+stackable=1
+
+
+///////// From BAD ///////////
+I will write when I'll have time because most of them are in my mind...
+
+Anyway, I wrote this long time ago and maybe can help:
+====================================
+
+Are more methods to do it:
+
+1. Put 10000 (10 sec) to 154 and the spell will have 10 sec cooldown (server and client)
+2. Put 10000 (10 sec) to 155 and all the spells will have 10 sec cooldown ( server and client)
+3. Put 10000 (10 sec) tp 17 or 18 and the spell will have 10 sec cooldown ( server and client)
+Also are more methods to make the changes only in server side using 107 or 108:
+I posted this long time ago (Blessing of Protection):
+IF you want that this spell to have 0 cooldown do this:
+
+1022:60=6,75=-300001,81=1,90=107,102=128,105=11
+
+6 from 60 is aura
+-300001 from 75 is -5 minutes
+107 from 90 is flat modifier
+1 from 81 means self cast
+128 is the code for Blessing of Protection ..
+11 from 105 is change cooldown..
+
+
+and this:
+======
+
+Ok, this info was added by me long time ago ( I just posted once again for those who need this):
+
+
+For Aura 107( flat modifier) :
+====================
+
+* If you want to increase the duration of spells...use 1 in fields 103,104,105
+* If you want to reduce to cost of spells...use 14 in fields 103,104,105
+* If you want for all effects...use 8 in fields 103,104,105
+* If you want to change cooldown...use 11 in fields 103,104,105
+* If you want to change critical chance...use 7 in fields 103,104,105
+* If you want to change movement speed...use 12 in fields 103,104,105
+* If you want to change DOT...use 22 in fields 103,104,105
+* If you want to change radius...use 6 in fields 103,104,105
+* If you want to change chance of succes of spells...use 18 in fields 103,104,105
+* If you want to change the damage of spells..use 0 in fields 103,104,105
+* If you want to reduce chance to resist...use 16 in fields 103,104,105
+* If you want to reduce threat generating by...use 2 in fields 103,104,105
+* If you want to increase chance to avoid interruption... use 9 in fields 103,104,105
+* If you want to increase critical strike damage bonus... use 15 in fields 103,104,105
+
+
+
+P.S If doesnt work with 17,18 or 154 and 155, then they should use aura_flat modifier(107)...To look at 158( This is used by talents (in field 100,101,102))
+
+
+I gave an example with blessing of protection ( 1022) and this spell has at field 158 = 268435584 and square root is 128  
+
+
+Use this formula(here is for blessing of protection):
+==================================
+
+code = 2^[128] + 2^[16384] = 268435584
+
+
+///////// From BAD ///////////
+
+
+
+
+
+==================================
+EffectImplicitTarget(76-84) :
+==================================
+1:{//Self Target
+5:{//Target: Pet
+6:{//Single Target Enemy
+15:{//All Enemies in Area of Effect
+16:{//All Enemies in Area of Effect instant
+20:{//All Party Members around the Caster
+21:{//Single Target Friend
+22:{//Enemy Targets around the Caster
+23:{//Gameobject Target
+24:{//Targets in Front of the Caster
+26:{//Gameobject/Item Target
+28:{//All Enemies in Area of Effect
+32:{//Minion Target
+35:{//Single Target Party Member
+45:{//Chain
+53:{//Target Area by Players CurrentSelection
+
+==================================
+procFlags(fields 22):
+==================================
+
+1:{ // on hit melee
+2:{ // on struck melee
+4:{ // on kill xp giver
+8:{ // unknown
+16:{ // on dodge
+32:{ // unknown
+64:
+66:{ // on block
+112:{ // unknown
+128:
+129:{ // on next melee attack
+256:{ // on cast spell
+1026:{ // on struck
+1138:
+1139:{ // unknown
+2048:{ // on hit ranged
+4096:{ // on hit critical
+8192:{ // on struck critical melee
+16384:{ // on cast spell
+32768:{ // on take damage
+65536:{ // on hit critical spell
+69632:{ // on critical melee
+131072:{ // on hit spell
+270336:{ // on struck critical
+1048578:{ // on struck in combat
+1049602:{ // on struck melee/range 
+
+
+
+
+==================================
+Spell Range Index
+==================================
+
+ID Radius Name
+=== ======= ========
+135 = 100 Tower 100
+114 = 35 Hunter Range
+1 = 0 Self Only
+2 = 5 Combat Range
+3 = 20 Short Range
+4 = 30 Medium Range
+5 = 40 Long Range
+6 = 100 Vision Range
+7 = 10 Very Short Range
+8 = 20 Short Range
+9 = 30 Medium Range
+10 = 40 Long Range
+11 = 15 Shorter Range
+12 = 5 Interact Range
+13 = 50000 Anywhere
+14 = 60 Extra Long Range
+34 = 25 Medium-Short Range
+35 = 35 Medium-LOng Range
+36 = 45 Longer Range
+37 = 50 Extended Range
+38 = 25 Extended Medium Range
+54 = 30 Geoff Monster Shoot
+74 = 30 Ranged Weapon
+94 = 40 Sting
+95 = 25 Charge
+96 = 2 Trap
+134 = 80 Tower 80
+
+
+==================================
+SpellMechanical(the codes):
+==================================
+
+23 turned
+20 shackled
+21 mounted
+22 seduced
+1 charmed
+2 confused
+3 disarmed
+4 distracted
+5 fleeing
+6 clumsy
+7 rooted
+8 pacified
+9 silenced
+10 asleep
+11 ensnared
+12 stunned
+13 frozen
+14 disoriented
+15 bleeding
+18 banished
+16 healing
+17 polymorphed
+19 shielded
+24 horrified
+25 invulnerable
+26 interrupted 
