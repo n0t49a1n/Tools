@@ -1,0 +1,2984 @@
+<?xml version="1.0"?>
+<Definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Table Name="Achievement" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Faction" Type="int" />
+    <Field Name="Instance_Id" Type="int" />
+    <Field Name="Supercedes" Type="uint" />
+    <Field Name="Title" Type="string" />
+    <Field Name="Description" Type="string" />
+    <Field Name="Category" Type="uint" />
+    <Field Name="Points" Type="uint" />
+    <Field Name="Ui_Order" Type="uint" />
+    <Field Name="Flags" Type="uint" />
+    <Field Name="IconID" Type="uint" />
+    <Field Name="Reward" Type="string" />
+    <Field Name="Minimum_Criteria" Type="uint" />
+    <Field Name="Shares_Criteria" Type="uint" />
+    <Field Name="Criteria_Tree" Type="int" />
+  </Table>
+  <Table Name="Achievement_Category" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="string" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="Achievement_Criteria" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Achievement_Id" Type="int" />
+    <Field Name="Type" Type="int" />
+    <Field Name="Asset_Id" Type="int" />
+    <Field Name="Quantity" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Start_Event" Type="int" />
+    <Field Name="Start_Asset" Type="int" />
+    <Field Name="Fail_Event" Type="int" />
+    <Field Name="Fail_Asset" Type="int" />
+    <Field Name="Description" Type="string" />
+    <Field Name="Flags" Type="int" />
+    <Field Name="Timer_Start_Event" Type="int" />
+    <Field Name="Timer_Asset_Id" Type="int" />
+    <Field Name="Timer_Time" Type="int" />
+    <Field Name="Ui_Order" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Req_Type1" Type="int" />
+    <Field Name="Req_Type2" Type="int" />
+    <Field Name="Req_Type3" Type="int" />
+    <Field Name="Req_Value1" Type="int" />
+    <Field Name="Req_Value2" Type="int" />
+    <Field Name="Req_Value3" Type="int" />
+  </Table>
+  <Table Name="AnimationData" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Name" Type="string" />
+    <Field Name="Flags" Type="int" />
+    <Field Name="Fallback" Type="int" />
+    <Field Name="BehaviorID" Type="int" />
+    <Field Name="BehaviorTier" Type="int" />
+  </Table>
+  <Table Name="AnimKit" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="AnimKitBoneSet" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+  <Table Name="AnimKitBoneSetAlias" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="AnimKitConfig" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="AnimKitConfigBoneSet" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="AnimKitPriority" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="AnimKitSegment" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+  </Table>
+  <Table Name="AnimReplacement" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="AnimReplacementSet" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="AreaAssignment" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+  </Table>
+  <Table Name="AreaGroup" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+  </Table>
+  <Table Name="AreaPOI" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="float" />
+    <Field Name="Field13" Type="float" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="string" />
+    <Field Name="Field18" Type="string" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+  </Table>
+  <Table Name="AreaTable" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="ContinentID" Type="int" />
+    <Field Name="ParentAreaID" Type="int" />
+    <Field Name="AreaBit" Type="int" />
+    <Field Name="Flags_1" Type="int" />
+    <Field Name="Flags_2" Type="int" />
+    <Field Name="SoundProviderPref" Type="int" />
+    <Field Name="SoundProviderPrefUnderwater" Type="int" />
+    <Field Name="AmbienceID" Type="int" />
+    <Field Name="ZoneName" Type="string" />
+    <Field Name="ZoneMusic" Type="int" />
+    <Field Name="IntroSound" Type="int" />
+    <Field Name="ExplorationLevel" Type="int" />
+    <Field Name="AreaName_Lang" Type="string" />
+    <Field Name="FactionGroupMask" Type="int" />
+    <Field Name="LiquidTypeID_1" Type="int" />
+    <Field Name="LiquidTypeID_2" Type="int" />
+    <Field Name="LiquidTypeID_3" Type="int" />
+    <Field Name="LiquidTypeID_4" Type="int" />
+    <Field Name="MinElevation" Type="float" />
+    <Field Name="Ambient_Multiplier" Type="float" />
+    <Field Name="Lightid" Type="int" />
+    <Field Name="MountFlags" Type="int" />
+    <Field Name="UwintroSound" Type="int" />
+    <Field Name="UwZoneMusic" Type="int" />
+    <Field Name="UwAmbience" Type="int" />
+    <Field Name="World_Pvp_Id" Type="int" />
+    <Field Name="PvpCombatWorldStateID" Type="int" />
+    <Field Name="WildBattlePetLevelMin" Type="int" />
+    <Field Name="WildBattlePetLevelMax" Type="int" />
+    <Field Name="WindSettingsID" Type="int" />
+  </Table>
+  <Table Name="AreaTrigger" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="MapId" Type="int" />
+    <Field Name="PosX" Type="float" />
+    <Field Name="PosY" Type="float" />
+    <Field Name="PosZ" Type="float" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="float" />
+    <Field Name="Field09" Type="float" />
+    <Field Name="Field10" Type="float" />
+    <Field Name="Field11" Type="float" />
+    <Field Name="Field12" Type="float" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+  </Table>
+  <Table Name="AreaTriggerActionSet" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="AreaTriggerBox" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="float" />
+    <Field Name="Field02" Type="float" />
+    <Field Name="Field03" Type="float" />
+  </Table>
+  <Table Name="AreaTriggerSphere" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="float" />
+  </Table>
+  <Table Name="ArmorLocation" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+  <Table Name="AttackAnimKits" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+  </Table>
+  <Table Name="AttackAnimTypes" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="AuctionHouse" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="string" />
+  </Table>
+  <Table Name="BankBagSlotPrices" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="BannedAddOns" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="NameMD5_" Type="uint" ArraySize="4" />
+    <Field Name="VersionMD5_" Type="uint" ArraySize="4" />
+    <Field Name="LastModified" Type="int" />
+    <Field Name="Flags" Type="int" />
+  </Table>
+  <Table Name="BarberShopStyle" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="string" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="float" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="string" />
+    <Field Name="Field07" Type="int" />
+  </Table>
+  <Table Name="BattleMasterList" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="string" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="int" />
+    <Field Name="Field24" Type="int" />
+    <Field Name="Field25" Type="int" />
+    <Field Name="Field26" Type="int" />
+    <Field Name="Field27" Type="int" />
+    <Field Name="Field28" Type="int" />
+    <Field Name="Field29" Type="string" />
+  </Table>
+  <Table Name="BattlePetAbilityEffect" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="uint" />
+    <Field Name="Field02" Type="uint" />
+    <Field Name="Field03" Type="uint" />
+    <Field Name="Field04" Type="uint" />
+    <Field Name="Field05" Type="uint" />
+    <Field Name="Field06" Type="uint" />
+    <Field Name="Field07" Type="uint" />
+    <Field Name="Field08" Type="uint" />
+    <Field Name="Field09" Type="uint" />
+    <Field Name="Field10" Type="uint" />
+    <Field Name="Field11" Type="uint" />
+  </Table>
+  <Table Name="BattlePetAbilityTurn" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="uint" />
+    <Field Name="Field02" Type="uint" />
+    <Field Name="Field03" Type="uint" />
+    <Field Name="Field04" Type="uint" />
+    <Field Name="Field05" Type="uint" />
+  </Table>
+  <Table Name="BattlePetBreedQuality" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="uint" />
+    <Field Name="Field02" Type="uint" />
+    <Field Name="Field03" Type="uint" />
+  </Table>
+  <Table Name="BattlePetEffectProperties" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="uint" />
+    <Field Name="Field02" Type="uint" />
+    <Field Name="Field03" Type="uint" />
+    <Field Name="Field04" Type="uint" />
+    <Field Name="Field05" Type="uint" />
+    <Field Name="Field06" Type="uint" />
+    <Field Name="Field07" Type="uint" />
+    <Field Name="Field08" Type="uint" />
+    <Field Name="Field09" Type="uint" />
+    <Field Name="Field10" Type="uint" />
+    <Field Name="Field11" Type="uint" />
+    <Field Name="Field12" Type="uint" />
+    <Field Name="Field13" Type="uint" />
+  </Table>
+  <Table Name="BattlePetVisual" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="uint" />
+    <Field Name="Field02" Type="uint" />
+    <Field Name="Field03" Type="uint" />
+    <Field Name="Field04" Type="uint" />
+    <Field Name="Field05" Type="uint" />
+    <Field Name="Field06" Type="uint" />
+    <Field Name="Field07" Type="uint" />
+  </Table>
+  <Table Name="BroadcastText" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="uint" />
+    <Field Name="Text_0" Type="string" />
+    <Field Name="Text_1" Type="string" />
+    <Field Name="Field04" Type="uint" />
+    <Field Name="Field05" Type="uint" />
+    <Field Name="Field06" Type="uint" />
+    <Field Name="Field07" Type="uint" />
+    <Field Name="Field08" Type="uint" />
+    <Field Name="Field09" Type="uint" />
+    <Field Name="SoundID" Type="uint" />
+    <Field Name="Field11" Type="uint" />
+    <Field Name="Field12" Type="uint" />
+  </Table>
+  <Table Name="CameraMode" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+  </Table>
+  <Table Name="CameraShakes" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="float" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="CastableRaidBuffs" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="Cfg_Categories" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="string" />
+    <Field Name="Field05" Type="string" />
+  </Table>
+  <Table Name="Cfg_Configs" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+  <Table Name="Cfg_Regions" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="CharacterFacialHairStyles" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="CharacterLoadout" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="CharacterLoadoutItem" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+  </Table>
+  <Table Name="CharBaseInfo" Build="18414">
+	<Field Name="ID" Type="int" IsIndex="true" />
+	<Field Name="RaceID" Type="byte" />
+	<Field Name="ClassID" Type="byte" />
+	<Field Name="Padding" Type="byte" ArraySize="2" />
+  </Table>
+  <Table Name="CharComponentTextureLayouts" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="CharComponentTextureSections" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+  </Table>
+  <Table Name="CharHairGeosets" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="CharSections" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="RaceID" Type="int" />
+    <Field Name="SexID" Type="int" />
+    <Field Name="BaseSection" Type="int" />
+    <Field Name="TextureName" Type="string" ArraySize="3" />
+    <Field Name="Flags" Type="int" />
+    <Field Name="VariationIndex" Type="int" />
+    <Field Name="ColorIndex" Type="int" />
+  </Table>
+  <Table Name="CharTitles" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="string" />
+    <Field Name="Field03" Type="string" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+  <Table Name="ChatChannels" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="string" />
+    <Field Name="Field04" Type="string" />
+  </Table>
+  <Table Name="ChatProfanity" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="ChrClasses" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="string" />
+    <Field Name="Field03" Type="string" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="string" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+  </Table>
+  <Table Name="ChrClassesXPowerTypes" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="ChrRaces" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="string" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="string" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="string" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="string" />
+    <Field Name="Field18" Type="string" />
+    <Field Name="Field19" Type="string" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="int" />
+    <Field Name="Field24" Type="int" />
+    <Field Name="Field25" Type="int" />
+    <Field Name="Field26" Type="int" />
+    <Field Name="Field27" Type="int" />
+    <Field Name="Field28" Type="int" />
+    <Field Name="Field29" Type="int" />
+    <Field Name="Field30" Type="int" />
+    <Field Name="Field31" Type="int" />
+    <Field Name="Field32" Type="int" />
+    <Field Name="Field33" Type="int" />
+    <Field Name="Field34" Type="int" />
+    <Field Name="Field35" Type="int" />
+  </Table>
+  <Table Name="ChrSpecialization" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="string" />
+    <Field Name="Field12" Type="string" />
+    <Field Name="Field13" Type="string" />
+  </Table>
+  <Table Name="CinematicCamera" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+  </Table>
+  <Table Name="CinematicSequences" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+  </Table>
+  <Table Name="CombatCondition" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+  </Table>
+  <Table Name="Creature" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="uint" />
+    <Field Name="Field02" Type="uint" />
+    <Field Name="Field03" Type="uint" />
+    <Field Name="Field04" Type="uint" />
+    <Field Name="Field05" Type="uint" />
+    <Field Name="Field06" Type="uint" />
+    <Field Name="Field07" Type="uint" />
+    <Field Name="Field08" Type="uint" />
+    <Field Name="Field09" Type="uint" />
+    <Field Name="Field10" Type="uint" />
+    <Field Name="Field11" Type="uint" />
+    <Field Name="Field12" Type="uint" />
+    <Field Name="Field13" Type="uint" />
+    <Field Name="Field14" Type="uint" />
+    <Field Name="Field15" Type="uint" />
+    <Field Name="Field16" Type="uint" />
+    <Field Name="Field17" Type="uint" />
+  </Table>
+  <Table Name="CreatureCache" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="byte" />
+    <Field Name="Field05" Type="byte" />
+    <Field Name="Field06" Type="byte" />
+    <Field Name="Name" Type="string" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="float" />
+    <Field Name="Field20" Type="float" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="byte" />
+    <Field Name="Icon" Type="string" />
+  </Table>
+  <Table Name="CreatureDifficulty" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="uint" />
+    <Field Name="Field02" Type="uint" />
+    <Field Name="Field03" Type="uint" />
+    <Field Name="Field04" Type="uint" />
+    <Field Name="Field05" Type="uint" />
+    <Field Name="Field06" Type="uint" />
+    <Field Name="Field07" Type="uint" />
+    <Field Name="Field08" Type="uint" />
+    <Field Name="Field09" Type="uint" />
+    <Field Name="Field10" Type="uint" />
+  </Table>
+  <Table Name="CreatureDisplayInfo" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="float" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="string" />
+    <Field Name="Field07" Type="string" />
+    <Field Name="Field08" Type="string" />
+    <Field Name="Field09" Type="string" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+  </Table>
+  <Table Name="CreatureDisplayInfoExtra" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+  </Table>
+  <Table Name="CreatureFamily" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="string" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="string" />
+    <Field Name="Field11" Type="string" />
+  </Table>
+  <Table Name="CreatureImmunities" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="int" />
+    <Field Name="Field24" Type="int" />
+    <Field Name="Field25" Type="int" />
+    <Field Name="Field26" Type="int" />
+    <Field Name="Field27" Type="int" />
+    <Field Name="Field28" Type="int" />
+    <Field Name="Field29" Type="int" />
+  </Table>
+  <Table Name="CreatureModelData" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Flags" Type="int" />
+    <Field Name="FileDataID" Type="int" />
+    <Field Name="SizeClass" Type="int" />
+    <Field Name="ModelScale" Type="float" />
+    <Field Name="BloodID" Type="int" />
+    <Field Name="FootprintTextureID" Type="int" />
+    <Field Name="FootprintTextureLength" Type="float" />
+    <Field Name="FootprintTextureWidth" Type="float" />
+    <Field Name="FootprintParticleScale" Type="float" />
+    <Field Name="FoleyMaterialID" Type="int" />
+    <Field Name="FootstepShakeSize" Type="int" />
+    <Field Name="DeathThudShakeSize" Type="int" />
+    <Field Name="SoundID" Type="int" />
+    <Field Name="CollisionWidth" Type="float" />
+    <Field Name="CollisionHeight" Type="float" />
+    <Field Name="MountHeight" Type="float" />
+    <Field Name="GeoBoxMin1" Type="float" />
+    <Field Name="GeoBoxMin2" Type="float" />
+    <Field Name="GeoBoxMin3" Type="float" />
+    <Field Name="GeoBoxMax1" Type="float" />
+    <Field Name="GeoBoxMax2" Type="float" />
+    <Field Name="GeoBoxMax3" Type="float" />
+    <Field Name="WorldEffectScale" Type="float" />
+    <Field Name="AttachedEffectScale" Type="float" />
+    <Field Name="MissileCollisionRadius" Type="float" />
+    <Field Name="MissileCollisionPush" Type="float" />
+    <Field Name="MissileCollisionRaise" Type="float" />
+    <Field Name="OverrideLootEffectScale" Type="float" />
+    <Field Name="OverrideNameScale" Type="float" />
+    <Field Name="OverrideSelectionRadius" Type="float" />
+    <Field Name="TamedPetBaseScale" Type="float" />
+    <Field Name="CreatureGeosetDataID" Type="int" />
+    <Field Name="HoverHeight" Type="float" />
+  </Table>
+  <Table Name="CreatureMovementInfo" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="CreatureSoundData" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="int" />
+    <Field Name="Field24" Type="int" />
+    <Field Name="Field25" Type="int" />
+    <Field Name="Field26" Type="int" />
+    <Field Name="Field27" Type="int" />
+    <Field Name="Field28" Type="int" />
+    <Field Name="Field29" Type="int" />
+    <Field Name="Field30" Type="int" />
+    <Field Name="Field31" Type="int" />
+    <Field Name="Field32" Type="int" />
+    <Field Name="Field33" Type="int" />
+    <Field Name="Field34" Type="int" />
+    <Field Name="Field35" Type="int" />
+    <Field Name="Field36" Type="int" />
+    <Field Name="Field37" Type="int" />
+    <Field Name="Field38" Type="int" />
+    <Field Name="Field39" Type="int" />
+  </Table>
+  <Table Name="CreatureSpellData" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="CreatureType" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="string" />
+  </Table>
+  <Table Name="Criteria" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+  </Table>
+  <Table Name="CriteriaTree" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Criteria" Type="int" />
+    <Field Name="Min_Criteria" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Flags" Type="int" />
+    <Field Name="Parent" Type="int" />
+    <Field Name="Flags2" Type="int" />
+    <Field Name="Description" Type="string" />
+  </Table>
+  <Table Name="CriteriaTreeXEffect" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="CurrencyCategory" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="string" />
+  </Table>
+  <Table Name="CurrencyTypes" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="string" />
+    <Field Name="Field03" Type="string" />
+    <Field Name="Field04" Type="string" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="string" />
+  </Table>
+  <Table Name="DeathThudLookups" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+  </Table>
+  <Table Name="DestructibleModelData" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="int" />
+  </Table>
+  <Table Name="Difficulty" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="string" />
+  </Table>
+  <Table Name="DungeonEncounter" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="string" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="DungeonMap" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="MapID" Type="int" />
+    <Field Name="FloorIndex" Type="int" />
+    <Field Name="MinX" Type="float" />
+    <Field Name="MinY" Type="float" />
+    <Field Name="MaxX" Type="float" />
+    <Field Name="MaxY" Type="float" />
+    <Field Name="ParentWorldMapID" Type="int" />
+    <Field Name="Flags" Type="int" />
+  </Table>
+  <Table Name="DungeonMapChunk" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="float" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+  <Table Name="DurabilityCosts" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="int" />
+    <Field Name="Field24" Type="int" />
+    <Field Name="Field25" Type="int" />
+    <Field Name="Field26" Type="int" />
+    <Field Name="Field27" Type="int" />
+    <Field Name="Field28" Type="int" />
+    <Field Name="Field29" Type="int" />
+  </Table>
+  <Table Name="DurabilityQuality" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="Emotes" Build="18414">
+    <Field Name="ID" Type="uint" IsIndex="true" />
+    <Field Name="Name" Type="string" />
+    <Field Name="AnimationID" Type="uint" />
+    <Field Name="Flags" Type="uint" />
+    <Field Name="EmoteType" Type="uint" />
+    <Field Name="UnitStandState" Type="uint" />
+    <Field Name="SoundID" Type="uint" />
+    <Field Name="Unk" Type="uint" />
+  </Table>
+  <Table Name="EmotesText" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="EmoteTextID" Type="string" />
+  </Table>
+  <Table Name="EmotesTextData" Build="18414">
+    <Field Name="ID" Type="uint" IsIndex="true" />
+    <Field Name="TextID" Type="string" />
+  </Table>
+  <Table Name="EmotesTextSound" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+  </Table>
+  <Table Name="EnvironmentalDamage" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="Exhaustion" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="float" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="string" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="string" />
+  </Table>
+  <Table Name="Faction" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="ReputationIndex" Type="int" />
+    <Field Name="ReputationRaceMask_1" Type="uint" />
+    <Field Name="ReputationRaceMask_2" Type="uint" />
+    <Field Name="ReputationRaceMask_3" Type="uint" />
+    <Field Name="ReputationRaceMask_4" Type="uint" />
+    <Field Name="ReputationClassMask_1" Type="uint" />
+    <Field Name="ReputationClassMask_2" Type="uint" />
+    <Field Name="ReputationClassMask_3" Type="uint" />
+    <Field Name="ReputationClassMask_4" Type="uint" />
+    <Field Name="ReputationBase_1" Type="int" />
+    <Field Name="ReputationBase_2" Type="int" />
+    <Field Name="ReputationBase_3" Type="int" />
+    <Field Name="ReputationBase_4" Type="int" />
+    <Field Name="ReputationFlags_1" Type="uint" />
+    <Field Name="ReputationFlags_2" Type="uint" />
+    <Field Name="ReputationFlags_3" Type="uint" />
+    <Field Name="ReputationFlags_4" Type="uint" />
+    <Field Name="ParentFactionID" Type="uint" />
+    <Field Name="SpilloverRate1" Type="float" />
+    <Field Name="SpilloverRate2" Type="float" />
+    <Field Name="SpilloverMaxRank" Type="uint" />
+    <Field Name="SpilloverRank_Unk" Type="uint" />
+    <Field Name="Name_Lang_1" Type="string" />
+    <Field Name="Description_Lang_1" Type="string" />
+    <Field Name="Expansion" Type="int" />
+  </Table>
+  <Table Name="FactionGroup" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="string" />
+    <Field Name="Field03" Type="string" />
+  </Table>
+  <Table Name="FactionTemplate" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+  </Table>
+  <Table Name="FileData" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="string" />
+  </Table>
+  <Table Name="FootprintTextures" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="FootstepTerrainLookup" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+  </Table>
+  <Table Name="FriendshipRepReaction" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="string" />
+  </Table>
+  <Table Name="FriendshipReputation" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="string" />
+  </Table>
+  <Table Name="GameObjectArtKit" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="string" />
+    <Field Name="Field05" Type="string" />
+    <Field Name="Field06" Type="string" />
+    <Field Name="Field07" Type="string" />
+  </Table>
+  <Table Name="GameObjectDiffAnimMap" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+  </Table>
+  <Table Name="GameObjectDisplayInfo" Build="18414">
+    <Field Name="ID" Type="uint" IsIndex="true" />
+    <Field Name="Filename" Type="string" />
+    <Field Name="Unk" Type="uint" ArraySize="10" />
+    <Field Name="MinX" Type="float" />
+    <Field Name="MinY" Type="float" />
+    <Field Name="MinZ" Type="float" />
+    <Field Name="MaxX" Type="float" />
+    <Field Name="MaxY" Type="float" />
+    <Field Name="MaxZ" Type="float" />
+    <Field Name="Transport" Type="int" />
+  </Table>
+  <Table Name="GameObjects" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="uint" />
+    <Field Name="Field02" Type="uint" />
+    <Field Name="Field03" Type="uint" />
+    <Field Name="Field04" Type="uint" />
+    <Field Name="Field05" Type="uint" />
+    <Field Name="Field06" Type="uint" />
+    <Field Name="Field07" Type="uint" />
+    <Field Name="Field08" Type="uint" />
+    <Field Name="Field09" Type="uint" />
+    <Field Name="Field10" Type="uint" />
+    <Field Name="Field11" Type="uint" />
+    <Field Name="Field12" Type="uint" />
+    <Field Name="Field13" Type="uint" />
+    <Field Name="Field14" Type="uint" />
+    <Field Name="Field15" Type="uint" />
+    <Field Name="Field16" Type="uint" />
+  </Table>
+  <Table Name="GameTables" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="GameTips" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="GarrSpecialization" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="float" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="string" />
+    <Field Name="Field08" Type="string" />
+  </Table>
+  <Table Name="GemProperties" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+  <Table Name="GlueScreenEmote" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+  </Table>
+  <Table Name="GlyphProperties" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="GlyphSlot" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="GMSurveyAnswers" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="string" />
+  </Table>
+  <Table Name="GMSurveyCurrentSurvey" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="GMSurveyQuestions" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="GMSurveySurveys" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+  </Table>
+  <Table Name="GMTicketCategory" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="GroundEffectDoodad" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="GroundEffectTexture" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+  </Table>
+  <Table Name="GroupFinderActivity" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="string" />
+    <Field Name="Field08" Type="string" />
+  </Table>
+  <Table Name="GroupFinderActivityGrp" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="GroupFinderCategory" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="GtBarberShopCostBase" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="GtBattlePetTypeDamageMod" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="float" />
+  </Table>
+  <Table Name="GtBattlePetXP" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="float" />
+  </Table>
+  <Table Name="GtChanceToMeleeCrit" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="float" />
+  </Table>
+  <Table Name="GtChanceToMeleeCritBase" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="GtChanceToSpellCrit" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="float" />
+  </Table>
+  <Table Name="GtChanceToSpellCritBase" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="GtCombatRatings" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="GtItemSocketCostPerLevel" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="GtNPCManaCostScaler" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="GtOCTBaseHPByClass" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="GtOCTBaseMPByClass" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="GtOCTClassCombatRatingScalar" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="GtOCTHpPerStamina" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="float" />
+  </Table>
+  <Table Name="GtRegenMPPerSpt" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="GtResilienceDR" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="float" />
+  </Table>
+  <Table Name="GtSpellScaling" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="GuildPerkSpells" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="HelmetAnimScaling" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="HelmetGeosetVisData" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+  </Table>
+  <Table Name="HolidayDescriptions" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="HolidayNames" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="Holidays" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="int" />
+    <Field Name="Field24" Type="int" />
+    <Field Name="Field25" Type="int" />
+    <Field Name="Field26" Type="int" />
+    <Field Name="Field27" Type="int" />
+    <Field Name="Field28" Type="int" />
+    <Field Name="Field29" Type="int" />
+    <Field Name="Field30" Type="int" />
+    <Field Name="Field31" Type="int" />
+    <Field Name="Field32" Type="int" />
+    <Field Name="Field33" Type="int" />
+    <Field Name="Field34" Type="int" />
+    <Field Name="Field35" Type="int" />
+    <Field Name="Field36" Type="int" />
+    <Field Name="Field37" Type="int" />
+    <Field Name="Field38" Type="string" />
+    <Field Name="Field39" Type="int" />
+    <Field Name="Field40" Type="int" />
+    <Field Name="Field41" Type="int" />
+    <Field Name="Field42" Type="int" />
+    <Field Name="Field43" Type="int" />
+    <Field Name="Field44" Type="int" />
+    <Field Name="Field45" Type="int" />
+    <Field Name="Field46" Type="int" />
+    <Field Name="Field47" Type="int" />
+    <Field Name="Field48" Type="int" />
+    <Field Name="Field49" Type="int" />
+    <Field Name="Field50" Type="int" />
+    <Field Name="Field51" Type="string" />
+    <Field Name="Field52" Type="int" />
+    <Field Name="Field53" Type="int" />
+    <Field Name="Field54" Type="string" />
+  </Table>
+  <Table Name="ImportPriceArmor" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+  </Table>
+  <Table Name="ImportPriceQuality" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="ImportPriceShield" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="float" />
+  </Table>
+  <Table Name="ImportPriceWeapon" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="float" />
+  </Table>
+  <Table Name="Item" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Class" Type="uint" />
+    <Field Name="SubClass" Type="uint" />
+    <Field Name="SoundOverrideSubclass" Type="int" />
+    <Field Name="Material" Type="int" />
+    <Field Name="DisplayId" Type="uint" />
+    <Field Name="InventoryType" Type="uint" />
+    <Field Name="Sheath" Type="uint" />
+  </Table>
+  <Table Name="ItemArmorQuality" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="float" />
+    <Field Name="Field02" Type="float" />
+    <Field Name="Field03" Type="float" />
+    <Field Name="Field04" Type="float" />
+    <Field Name="Field05" Type="float" />
+    <Field Name="Field06" Type="float" />
+    <Field Name="Field07" Type="float" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="ItemArmorShield" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="float" />
+    <Field Name="Field03" Type="float" />
+    <Field Name="Field04" Type="float" />
+    <Field Name="Field05" Type="float" />
+    <Field Name="Field06" Type="float" />
+    <Field Name="Field07" Type="float" />
+    <Field Name="Field08" Type="float" />
+  </Table>
+  <Table Name="ItemArmorTotal" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="float" />
+    <Field Name="Field03" Type="float" />
+    <Field Name="Field04" Type="float" />
+    <Field Name="Field05" Type="float" />
+  </Table>
+  <Table Name="ItemBagFamily" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="ItemBonus" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+  <Table Name="ItemClass" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="float" />
+    <Field Name="Field03" Type="string" />
+  </Table>
+  <Table Name="ItemDamageAmmo" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="float" />
+    <Field Name="Field02" Type="float" />
+    <Field Name="Field03" Type="float" />
+    <Field Name="Field04" Type="float" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="ItemDamageOneHand" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="ItemDamageOneHandCaster" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="ItemDamageRanged" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="ItemDamageThrown" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="ItemDamageTwoHand" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="ItemDamageTwoHandCaster" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="ItemDamageWand" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="ItemDisenchantLoot" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+  </Table>
+  <Table Name="ItemDisplayInfo" Build="18414">
+    <Field Name="ID" Type="uint" IsIndex="true" />
+    <Field Name="ModelName" Type="string" ArraySize="2" />
+    <Field Name="ModelTexture" Type="string" ArraySize="2" />
+    <Field Name="InventoryIcon" Type="string" ArraySize="2" />
+    <Field Name="GeosetGroup" Type="int" ArraySize="3" />
+    <Field Name="Flags" Type="int" />
+    <Field Name="SpellVisualID" Type="int" />
+    <Field Name="GroupSoundIndex" Type="int" />
+    <Field Name="HelmetGeosetVis" Type="int" ArraySize="2" />
+    <Field Name="Texture" Type="string" ArraySize="8" />
+    <Field Name="ItemVisual" Type="int" />
+    <Field Name="ParticleColorID" Type="int" />
+  </Table>
+  <Table Name="ItemEffect" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="ItemExtendedCost" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Reqhonorpoints" Type="uint" />
+    <Field Name="Reqarenapoints" Type="uint" />
+    <Field Name="RequiredArenaSlot" Type="uint" />
+    <Field Name="RequiredItem" Type="uint" ArraySize="5" />
+    <Field Name="RequiredItemCount" Type="uint" ArraySize="5" />
+    <Field Name="RequiredPersonalArenaRating" Type="uint" />
+    <Field Name="ItemPurchaseGroup" Type="uint" />
+    <Field Name="RequiredCurrency" Type="uint" ArraySize="5" />
+    <Field Name="RequiredCurrencyCount" Type="uint" ArraySize="5" />
+    <Field Name="RequiredFactionId" Type="uint" />
+    <Field Name="RequiredFactionStanding" Type="uint" />
+    <Field Name="RequirementFlags" Type="uint" />
+    <Field Name="RequiredGuildLevel" Type="uint" />
+    <Field Name="RequiredAchievement" Type="uint" />
+  </Table>
+  <Table Name="ItemGroupSounds" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+  </Table>
+  <Table Name="ItemLimitCategory" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="string" />
+  </Table>
+  <Table Name="ItemNameDescription" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="ItemPetFood" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="ItemPriceBase" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="ItemPurchaseGroup" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="string" />
+  </Table>
+  <Table Name="ItemRandomProperties" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Name" Type="string" />
+    <Field Name="Enchantment1" Type="int" />
+    <Field Name="Enchantment2" Type="int" />
+    <Field Name="Enchantment3" Type="int" />
+    <Field Name="Enchantment4" Type="int" />
+    <Field Name="Enchantment5" Type="int" />
+    <Field Name="Name_Lang1" Type="string" />
+  </Table>
+  <Table Name="ItemRandomSuffix" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="string" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+  </Table>
+  <Table Name="ItemReforge" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="float" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="float" />
+  </Table>
+  <Table Name="ItemSet" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="int" />
+    <Field Name="Field24" Type="int" />
+    <Field Name="Field25" Type="int" />
+    <Field Name="Field26" Type="int" />
+    <Field Name="Field27" Type="int" />
+    <Field Name="Field28" Type="int" />
+    <Field Name="Field29" Type="int" />
+    <Field Name="Field30" Type="int" />
+    <Field Name="Field31" Type="int" />
+    <Field Name="Field32" Type="int" />
+    <Field Name="Field33" Type="int" />
+    <Field Name="Field34" Type="int" />
+    <Field Name="Field35" Type="int" />
+    <Field Name="Field36" Type="int" />
+  </Table>
+  <Table Name="Item-Sparse" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Quality" Type="uint" />
+    <Field Name="Flags" Type="uint" />
+    <Field Name="Flags2" Type="uint" />
+    <Field Name="Flags3" Type="uint" />
+    <Field Name="Field05" Type="float" />
+    <Field Name="Field06" Type="float" />
+    <Field Name="BuyCount" Type="uint" />
+    <Field Name="BuyPrice" Type="uint" />
+    <Field Name="SellPrice" Type="uint" />
+    <Field Name="InventoryType" Type="uint" />
+    <Field Name="AllowableClass" Type="int" />
+    <Field Name="AllowableRace" Type="int" />
+    <Field Name="ItemLevel" Type="uint" />
+    <Field Name="RequiredLevel" Type="int" />
+    <Field Name="RequiredSkill" Type="uint" />
+    <Field Name="RequiredSkillRank" Type="uint" />
+    <Field Name="RequiredSpell" Type="uint" />
+    <Field Name="RequiredHonorRank" Type="uint" />
+    <Field Name="RequiredCityRank" Type="uint" />
+    <Field Name="RequiredReputationFaction" Type="uint" />
+    <Field Name="RequiredReputationRank" Type="uint" />
+    <Field Name="MaxCount" Type="uint" />
+    <Field Name="Stackable" Type="uint" />
+    <Field Name="ContainerSlots" Type="uint" />
+    <Field Name="ItemStatType" Type="int" ArraySize="10" />
+    <Field Name="ItemStatValue" Type="uint" ArraySize="10" />
+    <Field Name="ItemStatUnk1" Type="int" ArraySize="10" />
+    <Field Name="ItemStatUnk2" Type="int" ArraySize="10" />
+    <Field Name="ScalingStatDistribution" Type="uint" />
+    <Field Name="DamageType" Type="uint" />
+    <Field Name="Delay" Type="uint" />
+    <Field Name="RangedModRange" Type="float" />
+    <Field Name="SpellId" Type="int" ArraySize="5" />
+    <Field Name="SpellTrigger" Type="int" ArraySize="5" />
+    <Field Name="SpellCharges" Type="int" ArraySize="5" />
+    <Field Name="SpellCooldown" Type="int" ArraySize="5" />
+    <Field Name="SpellCategory" Type="int" ArraySize="5" />
+    <Field Name="SpellCategoryCooldown" Type="int" ArraySize="5" />
+    <Field Name="Bonding" Type="uint" />
+    <Field Name="Name" Type="string" />
+    <Field Name="Name2" Type="string" />
+    <Field Name="Name3" Type="string" />
+    <Field Name="Name4" Type="string" />
+    <Field Name="Description" Type="string" />
+    <Field Name="PageText" Type="uint" />
+    <Field Name="LanguageID" Type="uint" />
+    <Field Name="PageMaterial" Type="uint" />
+    <Field Name="StartQuest" Type="uint" />
+    <Field Name="LockID" Type="uint" />
+    <Field Name="Material" Type="int" />
+    <Field Name="Sheath" Type="uint" />
+    <Field Name="RandomProperty" Type="uint" />
+    <Field Name="RandomSuffix" Type="uint" />
+    <Field Name="ItemSet" Type="uint" />
+    <Field Name="Area" Type="uint" />
+    <Field Name="Map" Type="uint" />
+    <Field Name="BagFamily" Type="uint" />
+    <Field Name="TotemCategory" Type="uint" />
+    <Field Name="Color" Type="uint" ArraySize="3" />
+    <Field Name="Content" Type="uint" ArraySize="3" />
+    <Field Name="SocketBonus" Type="int" />
+    <Field Name="GemProperties" Type="uint" />
+    <Field Name="ArmorDamageModifier" Type="float" />
+    <Field Name="Duration" Type="uint" />
+    <Field Name="ItemLimitCategory" Type="uint" />
+    <Field Name="HolidayId" Type="uint" />
+    <Field Name="StatScalingFactor" Type="float" />
+    <Field Name="CurrencySubstitutionId" Type="int" />
+    <Field Name="CurrencySubstitutionCount" Type="int" />
+  </Table>
+  <Table Name="ItemSpec" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+  </Table>
+  <Table Name="ItemSpecOverride" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="ItemSubClass" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="string" />
+    <Field Name="Field12" Type="string" />
+  </Table>
+  <Table Name="ItemSubClassMask" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="string" />
+  </Table>
+  <Table Name="ItemToMountSpell" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="SpellId" Type="uint" />
+  </Table>
+  <Table Name="ItemUpgradePath" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+  </Table>
+  <Table Name="ItemVisualEffects" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="JournalEncounter" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="DungeonMapId" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="float" />
+    <Field Name="Field04" Type="float" />
+    <Field Name="SectionId" Type="int" />
+    <Field Name="InstanceId" Type="int" />
+    <Field Name="Index" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Name" Type="string" />
+    <Field Name="Description" Type="string" />
+    <Field Name="Field11" Type="int" />
+  </Table>
+  <Table Name="JournalEncounterXDifficulty" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="JournalInstance" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="MapId" Type="int" />
+    <Field Name="AreaId" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Name" Type="string" />
+    <Field Name="Description" Type="string" />
+  </Table>
+  <Table Name="JournalTier" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="string" />
+  </Table>
+  <Table Name="JournalTierXInstance" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Tier" Type="int" />
+    <Field Name="Instance" Type="int" />
+  </Table>
+  <Table Name="LfgDungeonGroup" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Name" Type="string" />
+    <Field Name="Order_Index" Type="int" />
+    <Field Name="Parent_Group_Id" Type="int" />
+    <Field Name="Typeid" Type="int" />
+  </Table>
+  <Table Name="LfgDungeons" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Name_Lang" Type="string" />
+    <Field Name="MinLevel" Type="int" />
+    <Field Name="MaxLevel" Type="int" />
+    <Field Name="Target_Level" Type="int" />
+    <Field Name="Target_Level_Min" Type="int" />
+    <Field Name="Target_Level_Max" Type="int" />
+    <Field Name="MapID" Type="int" />
+    <Field Name="Difficulty" Type="int" />
+    <Field Name="Flags" Type="int" />
+    <Field Name="TypeID" Type="int" />
+    <Field Name="Faction" Type="int" />
+    <Field Name="TextureFilename" Type="string" />
+    <Field Name="ExpansionLevel" Type="int" />
+    <Field Name="Order_Index" Type="int" />
+    <Field Name="Group_Id" Type="int" />
+    <Field Name="Description_Lang" Type="string" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="int" />
+    <Field Name="Field24" Type="int" />
+    <Field Name="Field25" Type="int" />
+    <Field Name="Field26" Type="int" />
+    <Field Name="Field27" Type="int" />
+    <Field Name="Field28" Type="int" />
+  </Table>
+  <Table Name="LFGDungeonsGroupingmap" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="LightSkybox" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="LiquidType" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="int" />
+    <Field Name="Field24" Type="int" />
+    <Field Name="Field25" Type="int" />
+    <Field Name="Field26" Type="int" />
+    <Field Name="Field27" Type="int" />
+    <Field Name="Field28" Type="int" />
+    <Field Name="Field29" Type="int" />
+    <Field Name="Field30" Type="int" />
+    <Field Name="Field31" Type="int" />
+    <Field Name="Field32" Type="int" />
+    <Field Name="Field33" Type="int" />
+    <Field Name="Field34" Type="int" />
+    <Field Name="Field35" Type="int" />
+    <Field Name="Field36" Type="int" />
+    <Field Name="Field37" Type="int" />
+    <Field Name="Field38" Type="int" />
+    <Field Name="Field39" Type="int" />
+    <Field Name="Field40" Type="int" />
+    <Field Name="Field41" Type="int" />
+    <Field Name="Field42" Type="int" />
+    <Field Name="Field43" Type="int" />
+    <Field Name="Field44" Type="int" />
+  </Table>
+  <Table Name="LoadingScreens" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="string" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="ManifestinterfaceActionIcon" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+  </Table>
+  <Table Name="ManifestinterfaceData" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="string" />
+  </Table>
+  <Table Name="ManifestinterfaceItemIcon" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+  </Table>
+  <Table Name="ManifestinterfaceTOCData" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="Map" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Directory" Type="string" />
+    <Field Name="Map_Type" Type="uint" />
+    <Field Name="Flags" Type="uint" />
+    <Field Name="IsPvp" Type="uint" />
+    <Field Name="Name" Type="string" />
+    <Field Name="Linked_Zone" Type="uint" />
+    <Field Name="HordeIntro" Type="string" />
+    <Field Name="AllianceIntro" Type="string" />
+    <Field Name="LoadingScreenID" Type="uint" />
+    <Field Name="BattlefieldMapIconScale" Type="float" />
+    <Field Name="Entrance_Map" Type="int" />
+    <Field Name="Entrance_X" Type="float" />
+    <Field Name="Entrance_Y" Type="float" />
+    <Field Name="TimeOfDayOverride" Type="uint" />
+    <Field Name="ExpansionID" Type="uint" />
+    <Field Name="ExpireTime" Type="uint" />
+    <Field Name="MaxPlayers" Type="uint" />
+    <Field Name="RootPhaseMap" Type="uint" />
+  </Table>
+  <Table Name="MapChallengeMode" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="MapId" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="BronzeTime" Type="int" />
+    <Field Name="SilverTime" Type="int" />
+    <Field Name="GoldTime" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+  </Table>
+  <Table Name="MapDifficulty" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="MapId" Type="int" />
+    <Field Name="Difficulty" Type="int" />
+    <Field Name="Requirement" Type="string" />
+    <Field Name="ResetTime" Type="int" />
+    <Field Name="MaxPlayers" Type="int" />
+    <Field Name="Field06" Type="int" />
+  </Table>
+  <Table Name="ModelNameToManifest" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="Mount" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="string" />
+    <Field Name="Field05" Type="string" />
+    <Field Name="Field06" Type="string" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="Movie" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="KeyChainId" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+  </Table>
+  <Table Name="MovieFileData" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+  </Table>
+  <Table Name="MovieOverlays" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+  </Table>
+  <Table Name="ObjectEffect" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+  </Table>
+  <Table Name="PaperDollItemFrame" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="string" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="QuestCache" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="float" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="int" />
+    <Field Name="Field24" Type="int" />
+    <Field Name="Field25" Type="int" />
+    <Field Name="Field26" Type="int" />
+    <Field Name="Field27" Type="int" />
+    <Field Name="Field28" Type="int" />
+    <Field Name="Field29" Type="int" />
+    <Field Name="Field30" Type="int" />
+  </Table>
+  <Table Name="QuestLine" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="QuestPackageItem" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="QuestPackageID" Type="uint" />
+    <Field Name="ItemID" Type="uint" />
+    <Field Name="Field03" Type="uint" />
+    <Field Name="Field04" Type="uint" />
+  </Table>
+  <Table Name="QuestPOIBlob" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="QuestPOIPoint" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Pos_X" Type="int" />
+    <Field Name="Pos_Y" Type="int" />
+    <Field Name="Poi_Id" Type="int" />
+  </Table>
+  <Table Name="ResearchBranch" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="string" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+  <Table Name="ResearchField" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="ResearchProject" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="string" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="string" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="ResearchSite" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="MapId" Type="int" />
+    <Field Name="Poi_Id" Type="int" />
+    <Field Name="Name" Type="string" />
+    <Field Name="TextureIndex" Type="int" />
+  </Table>
+  <Table Name="RulesetItemUpgrade" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="uint" />
+    <Field Name="UpgradeID" Type="uint" />
+    <Field Name="ItemEntry" Type="uint" />
+  </Table>
+  <Table Name="RulesetRaidLootUpgrade" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="uint" />
+    <Field Name="Field02" Type="uint" />
+    <Field Name="Field03" Type="uint" />
+    <Field Name="Field04" Type="uint" />
+  </Table>
+  <Table Name="ScalingStatDistribution" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+  </Table>
+  <Table Name="ScalingStatValues" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="int" />
+    <Field Name="Field24" Type="int" />
+    <Field Name="Field25" Type="int" />
+    <Field Name="Field26" Type="int" />
+    <Field Name="Field27" Type="int" />
+    <Field Name="Field28" Type="int" />
+    <Field Name="Field29" Type="int" />
+    <Field Name="Field30" Type="int" />
+    <Field Name="Field31" Type="int" />
+    <Field Name="Field32" Type="int" />
+    <Field Name="Field33" Type="int" />
+    <Field Name="Field34" Type="int" />
+    <Field Name="Field35" Type="int" />
+    <Field Name="Field36" Type="int" />
+    <Field Name="Field37" Type="int" />
+    <Field Name="Field38" Type="int" />
+    <Field Name="Field39" Type="int" />
+    <Field Name="Field40" Type="int" />
+    <Field Name="Field41" Type="int" />
+    <Field Name="Field42" Type="int" />
+    <Field Name="Field43" Type="int" />
+    <Field Name="Field44" Type="int" />
+    <Field Name="Field45" Type="int" />
+    <Field Name="Field46" Type="int" />
+    <Field Name="Field47" Type="int" />
+    <Field Name="Field48" Type="int" />
+  </Table>
+  <Table Name="Scenario" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Name_Lang" Type="string" />
+    <Field Name="Flags" Type="int" />
+  </Table>
+  <Table Name="ScenarioEventEntry" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="ScenarioStep" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Criteria" Type="int" />
+    <Field Name="ScenarioId" Type="int" />
+    <Field Name="Step" Type="int" />
+    <Field Name="Step_Description" Type="string" />
+    <Field Name="Step_Name" Type="string" />
+    <Field Name="Bonus_Step" Type="int" />
+  </Table>
+  <Table Name="SceneScript" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Name" Type="string" />
+    <Field Name="Script" Type="string" />
+    <Field Name="PrevScriptPartID" Type="uint" />
+    <Field Name="NextScriptPartID" Type="uint" />
+  </Table>
+  <Table Name="SceneScriptPackage" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Nane" Type="string" />
+  </Table>
+  <Table Name="SceneScriptPackageMember" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="uint" />
+    <Field Name="Field02" Type="uint" />
+    <Field Name="Field03" Type="uint" />
+    <Field Name="Field04" Type="uint" />
+  </Table>
+  <Table Name="SoundEntries" Build="18414">
+	<Field Name="ID" Type="int" IsIndex="true" />
+	<Field Name="SoundType" Type="int" />
+	<Field Name="Name" Type="string" />
+	<Field Name="FileDataId" Type="int" ArraySize="10" />
+	<Field Name="Freq" Type="int" ArraySize="10" />
+	<Field Name="Volumefloat" Type="float" />
+	<Field Name="Flags" Type="int" />
+	<Field Name="MinDistance" Type="float" />
+	<Field Name="DistanceCutoff" Type="float" />
+	<Field Name="EAXDef" Type="int" />
+	<Field Name="SoundEntriesAdvancedID" Type="int" />
+	<Field Name="Volumevariationplus" Type="float" />
+	<Field Name="Volumevariationminus" Type="float" />
+	<Field Name="Pitchvariationplus" Type="float" />
+	<Field Name="Pitchvariationminus" Type="float" />
+	<Field Name="Pitchadjust" Type="float" />
+	<Field Name="DialogType" Type="int" />
+  </Table>
+  <Table Name="Spell" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Name" Type="string" />
+    <Field Name="NameSubtext" Type="string" />
+    <Field Name="Description" Type="string" />
+    <Field Name="AuraDescription" Type="string" />
+    <Field Name="RuneCostID" Type="int" />
+    <Field Name="SpellMissileID" Type="int" />
+    <Field Name="SpellDescriptionVariableID" Type="int" />
+    <Field Name="Field08" Type="float" />
+    <Field Name="SpellScalingID" Type="int" />
+    <Field Name="SpellAuraOptionsId" Type="int" />
+    <Field Name="SpellAuraRestrictionsId" Type="int" />
+    <Field Name="SpellCastingRequirementsId" Type="int" />
+    <Field Name="SpellCategoriesId" Type="int" />
+    <Field Name="SpellClassOptionsId" Type="int" />
+    <Field Name="SpellCooldownsId" Type="int" />
+    <Field Name="SpellEquippedItemsId" Type="int" />
+    <Field Name="SpellinterruptsId" Type="int" />
+    <Field Name="SpellLevelsId" Type="int" />
+    <Field Name="SpellReagentsId" Type="int" />
+    <Field Name="SpellShapeshiftId" Type="int" />
+    <Field Name="SpellTargetRestrictionsId" Type="int" />
+    <Field Name="SpellTotemsId" Type="int" />
+    <Field Name="ResearchProjectId" Type="int" />
+    <Field Name="SpellMiscId" Type="int" />
+  </Table>
+  <Table Name="SpellAuraOptions" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+  </Table>
+  <Table Name="SpellAuraRestrictions" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+  </Table>
+  <Table Name="SpellCategories" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+  </Table>
+  <Table Name="SpellClassOptions" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="ModalNextSpell" Type="uint" />
+    <Field Name="SpellClassMask_1" Type="uint" />
+    <Field Name="SpellClassMask_2" Type="uint" />
+    <Field Name="SpellClassMask_3" Type="uint" />
+    <Field Name="SpellClassSet" Type="uint" />
+    <Field Name="Field06" Type="int" />
+  </Table>
+  <Table Name="SpellCooldowns" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="CategoryRecoveryTime" Type="int" />
+    <Field Name="RecoveryTime" Type="int" />
+    <Field Name="StartRecoveryTime" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+  <Table Name="SpellDescriptionVariables" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="SpellEffect" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="uint" />
+    <Field Name="Effect" Type="uint" />
+    <Field Name="EffectValueMultiplier" Type="float" />
+    <Field Name="EffectAura" Type="uint" />
+    <Field Name="EffectAuraTickCount" Type="uint" />
+    <Field Name="EffectBasePoints" Type="int" />
+    <Field Name="EffectBonusMultiplier" Type="float" />
+    <Field Name="EffectDamageMultiplier" Type="float" />
+    <Field Name="EffectChainTargets" Type="uint" />
+    <Field Name="EffectDieSides" Type="uint" />
+    <Field Name="EffectItemType" Type="uint" />
+    <Field Name="EffectMechanic" Type="uint" />
+    <Field Name="EffectMiscValue" Type="int" />
+    <Field Name="EffectMiscValueB" Type="int" />
+    <Field Name="EffectPointsPerCombo" Type="float" />
+    <Field Name="EffectRadiusIndex" Type="uint" />
+    <Field Name="EffectRadiusMaxIndex" Type="uint" />
+    <Field Name="EffectRealPointsPerLevel" Type="float" />
+    <Field Name="EffectSpellClassMask_1" Type="uint" />
+    <Field Name="EffectSpellClassMask_2" Type="uint" />
+    <Field Name="EffectSpellClassMask_3" Type="uint" />
+    <Field Name="Effect_0" Type="uint" />
+    <Field Name="EffectTriggerSpell" Type="int" />
+    <Field Name="Field24" Type="uint" />
+    <Field Name="ImplicitTargetA" Type="uint" />
+    <Field Name="ImplicitTargetB" Type="uint" />
+    <Field Name="EffectSpellId" Type="uint" />
+    <Field Name="EffectIndex" Type="uint" />
+    <Field Name="Field29" Type="uint" />
+  </Table>
+  <Table Name="SpellEquippedItems" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+  <Table Name="Spellinterrupts" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+  </Table>
+  <Table Name="SpellLearnSpell_internal" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+  </Table>
+  <Table Name="SpellLevels" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+  <Table Name="SpellLevels_internal" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+    <Table Name="SpellMisc" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="SpellId" Type="int" />
+    <Field Name="Unk" Type="int" />
+    <Field Name="Attributes" Type="uint" />
+    <Field Name="AttributesEx" Type="uint" />
+    <Field Name="AttributesExB" Type="uint" />
+    <Field Name="AttributesExC" Type="uint" />
+    <Field Name="AttributesExD" Type="uint" />
+    <Field Name="AttributesExE" Type="uint" />
+    <Field Name="AttributesExF" Type="uint" />
+    <Field Name="AttributesExG" Type="uint" />
+    <Field Name="AttributesExH" Type="uint" />
+    <Field Name="AttributesExI" Type="uint" />
+    <Field Name="AttributesExJ" Type="uint" />
+    <Field Name="AttributesExK" Type="uint" />
+    <Field Name="AttributesExL" Type="uint" />
+    <Field Name="AttributesExM" Type="uint" />
+    <Field Name="CastingTimeIndex" Type="int" />
+    <Field Name="DurationIndex" Type="int" />
+    <Field Name="RangeIndex" Type="int" />
+    <Field Name="Speed" Type="float" />
+    <Field Name="Visual1" Type="int" />
+    <Field Name="Visual2" Type="int" />
+    <Field Name="IconID" Type="int" />
+    <Field Name="ActiveIconID" Type="int" />
+    <Field Name="SchoolMask" Type="int" />
+  </Table>
+  <Table Name="SpellMissile" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="float" />
+    <Field Name="Field03" Type="float" />
+    <Field Name="Field04" Type="float" />
+    <Field Name="Field05" Type="float" />
+    <Field Name="Field06" Type="float" />
+    <Field Name="Field07" Type="float" />
+    <Field Name="Field08" Type="float" />
+    <Field Name="Field09" Type="float" />
+    <Field Name="Field10" Type="float" />
+    <Field Name="Field11" Type="float" />
+    <Field Name="Field12" Type="float" />
+    <Field Name="Field13" Type="float" />
+    <Field Name="Field14" Type="float" />
+  </Table>
+  <Table Name="SpellPower" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="float" />
+    <Field Name="Field10" Type="float" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="float" />
+  </Table>
+  <Table Name="SpellRuneCost" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+  <Table Name="SpellScaling" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="float" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="SpellShapeshift" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+  </Table>
+  <Table Name="SpellShapeshiftForm" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="string" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+  </Table>
+  <Table Name="SpellTargetRestrictions" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="float" />
+    <Field Name="Field04" Type="float" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="SpellTotems" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+  </Table>
+  <Table Name="SpellVisual" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="Field20" Type="int" />
+    <Field Name="Field21" Type="int" />
+    <Field Name="Field22" Type="int" />
+    <Field Name="Field23" Type="int" />
+    <Field Name="Field24" Type="int" />
+    <Field Name="Field25" Type="int" />
+    <Field Name="Field26" Type="int" />
+    <Field Name="Field27" Type="int" />
+    <Field Name="Field28" Type="int" />
+    <Field Name="Field29" Type="int" />
+  </Table>
+  <Table Name="SpellVisualEffectName" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="float" />
+    <Field Name="Field03" Type="float" />
+    <Field Name="Field04" Type="float" />
+    <Field Name="Field05" Type="float" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="float" />
+    <Field Name="Field08" Type="int" />
+  </Table>
+  <Table Name="UiTextureAtlasMember" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+  </Table>
+  <Table Name="UiTextureKit" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+    <Table Name="Vehicle" Build="18414">
+    <Field Name="ID" Type="uint" IsIndex="true" />
+    <Field Name="Flags" Type="uint" />
+    <Field Name="UnkName" Type="string" />
+    <Field Name="TurnSpeed" Type="float" />
+    <Field Name="PitchSpeed" Type="float" />
+    <Field Name="PitchMin" Type="float" />
+    <Field Name="PitchMax" Type="float" />
+    <Field Name="SeatID" Type="uint" ArraySize="8"/>
+    <Field Name="MouseLookOffsetPitch" Type="float" />
+    <Field Name="CameraFadeDistScalarMin" Type="float" />
+    <Field Name="CameraFadeDistScalarMax" Type="float" />
+    <Field Name="CameraPitchOffset" Type="float" />
+    <Field Name="FacingLimitRight" Type="float" />
+    <Field Name="FacingLimitLeft" Type="float" />
+    <Field Name="MissileTargetTurnLingering" Type="float" />
+    <Field Name="MissileTargetPitchLingering" Type="float" />
+    <Field Name="MissileTargetMouseLingering" Type="float" />
+    <Field Name="MissileTargetEndOpacity" Type="float" />
+    <Field Name="MissileTargetArcSpeed" Type="float" />
+    <Field Name="MissileTargetArcRepeat" Type="float" />
+    <Field Name="MissileTargetArcWidth" Type="float" />
+    <Field Name="MissileTargetImpactRadius" Type="float" ArraySize="2"/>
+    <Field Name="MissileTargetArcTexture" Type="string" />
+    <Field Name="MissileTargetImpactTexture" Type="string" />
+    <Field Name="MissileTargetImpactModel" Type="string" ArraySize="2"/>
+    <Field Name="CameraYawOffset" Type="float" />
+    <Field Name="UILocomotionType" Type="uint" />
+    <Field Name="MissileTargetImpactTexRadius" Type="float" />
+    <Field Name="UISeatIndicatorType" Type="uint" />
+    <Field Name="PowerType" Type="uint" />
+    <Field Name="Unk1" Type="uint" />
+    <Field Name="Unk2" Type="uint" />
+  </Table>
+  <Table Name="VehicleSeat" Build="18414">
+    <Field Name="ID" Type="uint" IsIndex="true" />
+    <Field Name="Flags" Type="uint" />
+    <Field Name="AttachmentID" Type="int" />
+    <Field Name="AttachmentOffsetX" Type="float" />
+    <Field Name="AttachmentOffsetY" Type="float" />
+    <Field Name="AttachmentOffsetZ" Type="float" />
+    <Field Name="EnterPreDelay" Type="float" />
+    <Field Name="EnterSpeed" Type="float" />
+    <Field Name="EnterGravity" Type="float" />
+    <Field Name="EnterMinDuration" Type="float" />
+    <Field Name="EnterMaxDuration" Type="float" />
+    <Field Name="EnterMinArcHeight" Type="float" />
+    <Field Name="EnterMaxArcHeight" Type="float" />
+    <Field Name="EnterAnimStart" Type="int" />
+    <Field Name="EnterAnimLoop" Type="int" />
+    <Field Name="RideAnimStart" Type="int" />
+    <Field Name="RideAnimLoop" Type="int" />
+    <Field Name="RideUpperAnimStart" Type="int" />
+    <Field Name="RideUpperAnimLoop" Type="int" />
+    <Field Name="ExitPreDelay" Type="float" />
+    <Field Name="ExitSpeed" Type="float" />
+    <Field Name="ExitGravity" Type="float" />
+    <Field Name="ExitMinDuration" Type="float" />
+    <Field Name="ExitMaxDuration" Type="float" />
+    <Field Name="ExitMinArcHeight" Type="float" />
+    <Field Name="ExitMaxArcHeight" Type="float" />
+    <Field Name="ExitAnimStart" Type="int" />
+    <Field Name="ExitAnimLoop" Type="int" />
+    <Field Name="ExitAnimEnd" Type="int" />
+    <Field Name="PassengerYaw" Type="float" />
+    <Field Name="PassengerPitch" Type="float" />
+    <Field Name="PassengerRoll" Type="float" />
+    <Field Name="PassengerAttachmentID" Type="int" />
+    <Field Name="VehicleEnterAnim" Type="int" />
+    <Field Name="VehicleExitAnim" Type="int" />
+    <Field Name="VehicleRideAnimLoop" Type="int" />
+    <Field Name="VehicleEnterAnimBone" Type="int" />
+    <Field Name="VehicleExitAnimBone" Type="int" />
+    <Field Name="VehicleRideAnimLoopBone" Type="int" />
+    <Field Name="VehicleEnterAnimDelay" Type="float" />
+    <Field Name="VehicleExitAnimDelay" Type="float" />
+    <Field Name="VehicleAbilityDisplay" Type="uint" />
+    <Field Name="EnterUISoundID" Type="uint" />
+    <Field Name="ExitUISoundID" Type="uint" />
+    <Field Name="UISkin" Type="int" />
+    <Field Name="FlagsB" Type="uint" />
+    <Field Name="CameraEnteringDelay" Type="float" />
+    <Field Name="CameraEnteringDuration" Type="float" />
+    <Field Name="CameraExitingDelay" Type="float" />
+    <Field Name="CameraExitingDuration" Type="float" />
+    <Field Name="CameraOffsetX" Type="float" />
+    <Field Name="CameraOffsetY" Type="float" />
+    <Field Name="CameraOffsetZ" Type="float" />
+    <Field Name="CameraPosChaseRate" Type="float" />
+    <Field Name="CameraFacingChaseRate" Type="float" />
+    <Field Name="CameraEnteringZoom" Type="float" />
+    <Field Name="CameraSeatZoomMin" Type="float" />
+    <Field Name="CameraSeatZoomMax" Type="float" />
+  </Table>
+  <Table Name="VehicleUIIndicator" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="BackgroundTexture" Type="string" />
+  </Table>
+  <Table Name="VehicleUIIndSeat" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="VehicleUIIndicatorID" Type="int" />
+    <Field Name="VirtualSeatIndex" Type="int" />
+    <Field Name="XPos" Type="float" />
+    <Field Name="YPos" Type="float" />
+  </Table>
+  <Table Name="WorldBosslockout" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+  </Table>
+  <Table Name="WorldEffect" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+  </Table>
+  <Table Name="WorldMapArea" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="MapId" Type="int" />
+    <Field Name="AreaId" Type="int" />
+    <Field Name="Int_Name" Type="string" />
+    <Field Name="LocLeft" Type="float" />
+    <Field Name="LocRight" Type="float" />
+    <Field Name="LocTop" Type="float" />
+    <Field Name="LocBottom" Type="float" />
+    <Field Name="DisplayMapID" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Flags" Type="int" />
+    <Field Name="MinLevel" Type="int" />
+    <Field Name="MaxLevel" Type="int" />
+  </Table>
+  <Table Name="WorldMapOverlay" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="string" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+  </Table>
+  <Table Name="WorldMapTransforms" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="float" />
+    <Field Name="Field03" Type="float" />
+    <Field Name="Field04" Type="float" />
+    <Field Name="Field05" Type="float" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="float" />
+    <Field Name="Field08" Type="float" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="float" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+  </Table>
+  <Table Name="WorldSafelocs" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Map" Type="uint" />
+    <Field Name="Pos_X" Type="float" />
+    <Field Name="Pos_Y" Type="float" />
+    <Field Name="Pos_Z" Type="float" />
+    <Field Name="Field05" Type="float" />
+    <Field Name="Name_Lang" Type="string" />
+  </Table>
+  <Table Name="WorldState" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+  </Table>
+  <Table Name="WorldStateExpression" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+  </Table>
+  <Table Name="WorldStateUI" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="int" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="string" />
+    <Field Name="Field07" Type="string" />
+    <Field Name="Field08" Type="string" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="string" />
+    <Field Name="Field12" Type="string" />
+    <Field Name="Field13" Type="string" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+  </Table>
+  <Table Name="ZoneintroMusicTable" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+  </Table>
+  <Table Name="ZoneMusic" Build="18414">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="int" />
+    <Field Name="Field03" Type="int" />
+    <Field Name="Field04" Type="int" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+  </Table>
+</Definition>
