@@ -1,0 +1,7 @@
+COLUMNS
+int EnumID
+locstring Name_lang
+
+BUILD 0.5.3.3368, 1.12.1.5875
+EnumID<32>
+Name_lang

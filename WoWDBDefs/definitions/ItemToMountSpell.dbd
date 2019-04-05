@@ -1,0 +1,7 @@
+COLUMNS
+int ItemID?
+int<Spell::ID> SpellID?
+
+BUILD 6.0.1.18179
+ItemID<32>
+SpellID<32>

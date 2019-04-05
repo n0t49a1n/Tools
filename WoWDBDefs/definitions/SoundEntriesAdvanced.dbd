@@ -1,0 +1,90 @@
+COLUMNS
+int ID
+int SoundEntryID
+float InnerRadius2D
+int TimeA
+int TimeB
+int TimeC
+int TimeD
+int RandomOffsetRange
+int Usage
+int TimeIntervalMin
+int TimeIntervalMax
+int VolumeSliderCategory
+float DuckToSFX
+float DuckToMusic
+float DuckToAmbience
+float InnerRadiusOfInfluence
+float OuterRadiusOfInfluence
+int TimeToDuck
+int TimeToUnduck
+float InsideAngle
+float OutsideAngle
+float OutsideVolume
+float OuterRadius2D
+int MinRandomPosOffset
+int MaxRandomPosOffset
+float DuckToDialog
+float DuckToSuppressors
+int MsOffset
+float Volume
+string Name
+
+BUILD 6.0.1.18179
+$id$ID<32>
+SoundEntryID<32>
+InnerRadius2D
+TimeA<32>
+TimeB<32>
+TimeC<32>
+TimeD<32>
+RandomOffsetRange<32>
+Usage<32>
+TimeIntervalMin<32>
+TimeIntervalMax<32>
+VolumeSliderCategory<32>
+DuckToSFX
+DuckToMusic
+DuckToAmbience
+InnerRadiusOfInfluence
+OuterRadiusOfInfluence
+TimeToDuck<32>
+TimeToUnduck<32>
+InsideAngle
+OutsideAngle
+OutsideVolume
+OuterRadius2D
+MinRandomPosOffset<32>
+MaxRandomPosOffset<32>
+DuckToDialog
+DuckToSuppressors
+MsOffset<32>
+Volume[20]
+
+BUILD 3.0.2.8885, 3.0.8.9328, 4.0.0.11792
+BUILD 3.0.1.8770-3.3.5.12340
+BUILD 4.0.0.11792-4.1.0.13875
+$id$ID<32>
+SoundEntryID<32>
+InnerRadius2D
+TimeA<32>
+TimeB<32>
+TimeC<32>
+TimeD<32>
+RandomOffsetRange<32>
+Usage<32>
+TimeIntervalMin<32>
+TimeIntervalMax<32>
+VolumeSliderCategory<32>
+DuckToSFX
+DuckToMusic
+DuckToAmbience
+InnerRadiusOfInfluence
+OuterRadiusOfInfluence
+TimeToDuck<32>
+TimeToUnduck<32>
+InsideAngle
+OutsideAngle
+OutsideVolume
+OuterRadius2D
+Name
