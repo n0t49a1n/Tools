@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<Definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Table Name="ChrClasses" Build="28377">
+    <Field Name="Name" Type="string" />
+    <Field Name="Field01" Type="string" />
+    <Field Name="Field02" Type="string" />
+    <Field Name="Field03" Type="string" />
+    <Field Name="Field04" Type="string" />
+    <Field Name="Field05" Type="int" />
+    <Field Name="Field06" Type="int" />
+    <Field Name="Field07" Type="int" />
+    <Field Name="Field08" Type="int" />
+    <Field Name="Field09" Type="int" />
+    <Field Name="Field10" Type="int" />
+    <Field Name="Field11" Type="int" />
+    <Field Name="Field12" Type="int" />
+    <Field Name="Field13" Type="int" />
+    <Field Name="Field14" Type="int" />
+    <Field Name="Field15" Type="int" />
+    <Field Name="Field16" Type="int" />
+    <Field Name="Field17" Type="int" />
+    <Field Name="Field18" Type="int" />
+    <Field Name="Field19" Type="int" />
+    <Field Name="ID" Type="int" IsIndex="true" />
+  </Table>
+  <Table Name="Item" Build="28377">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="IconFileDataID" Type="int" />
+    <Field Name="Field_1_13_0_28211_001" Type="int" />
+    <Field Name="ClassID" Type="byte" />
+    <Field Name="SubclassID" Type="byte" />
+    <Field Name="Sound_Override_SubclassID" Type="byte" />
+    <Field Name="Material" Type="byte" />
+    <Field Name="InventoryType" Type="byte" />
+    <Field Name="SheatheType" Type="byte" />
+    <Field Name="ItemGroupSoundsID" Type="byte" />
+  </Table>
+  <Table Name="Map" Build="28377">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="Directory" Type="string" />
+    <Field Name="MapName_Lang" Type="string" />
+    <Field Name="MapDescription0_Lang" Type="string" />
+    <Field Name="MapDescription1_Lang" Type="string" />
+    <Field Name="PvpShortDescription_Lang" Type="string" />
+    <Field Name="PvpLongDescription_Lang" Type="string" />
+    <Field Name="Flags" Type="float" ArraySize="2" />
+    <Field Name="minimapiconscale" Type="byte" />
+    <Field Name="corpse" Type="byte" ArraySize="2" />
+    <Field Name="areatableid" Type="byte" />
+    <Field Name="loadingscreenid" Type="short" />
+    <Field Name="corpsemapid" Type="short" />
+    <Field Name="timeofdayoverride" Type="short" />
+    <Field Name="parentmapid" Type="short" />
+    <Field Name="cosmeticparentmap" Type="short" />
+    <Field Name="windsettingsid" Type="int" />
+    <Field Name="instancetype" Type="int" />
+    <Field Name="maptype" Type="short" />
+    <Field Name="expansionid" Type="byte" />
+    <Field Name="maxplayers" Type="short" />
+    <Field Name="timeoffset" Type="int" />
+  </Table>
+  <Table Name="Spell" Build="28377">
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="NameSubtext_Lang" Type="string" />
+    <Field Name="Description_Lang" Type="string" />
+    <Field Name="AuraDescription_Lang" Type="string" />
+    <Field Name="Field_1_13_0_28211_003_lang" Type="string" />
+    <Field Name="Field_1_13_0_28211_004" Type="uint" />
+  </Table>
+  <Table Name="SpellPower" Build="28377">
+    <Field Name="SpellID" Type="uint" IsIndex="true" />
+    <Field Name="ManaCost" Type="int" />
+    <Field Name="PowerCostPct" Type="float" />
+    <Field Name="PowerPctPerSecond" Type="float" />
+    <Field Name="RequiredAuraSpellID" Type="int" />
+    <Field Name="PowerCostMaxPct" Type="int" />
+    <Field Name="OrderIndex" Type="int" />
+    <Field Name="PowerType" Type="int" />
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="ManaCostPerLevel" Type="int" />
+    <Field Name="ManaPerSecond" Type="int" />
+    <Field Name="OptionalCost" Type="int" />
+    <Field Name="PowerDisplayID" Type="int" />
+    <Field Name="AltPowerBarID" Type="int" />
+  </Table>
+</Definition>

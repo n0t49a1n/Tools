@@ -454,10 +454,10 @@
     <Field Name="Field04" Type="int" />
   </Table>
   <Table Name="CharBaseInfo" Build="18414">
-	<Field Name="ID" Type="int" IsIndex="true" />
-	<Field Name="RaceID" Type="byte" />
-	<Field Name="ClassID" Type="byte" />
-	<Field Name="Padding" Type="byte" ArraySize="2" />
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="RaceID" Type="byte" />
+    <Field Name="ClassID" Type="byte" />
+    <Field Name="Padding" Type="byte" ArraySize="2" />
   </Table>
   <Table Name="CharComponentTextureLayouts" Build="18414">
     <Field Name="ID" Type="int" IsIndex="true" />
@@ -513,26 +513,6 @@
     <Field Name="ID" Type="int" IsIndex="true" />
     <Field Name="Field01" Type="string" />
     <Field Name="Field02" Type="int" />
-  </Table>
-  <Table Name="ChrClasses" Build="18414">
-    <Field Name="ID" Type="int" IsIndex="true" />
-    <Field Name="Field01" Type="int" />
-    <Field Name="Field02" Type="string" />
-    <Field Name="Field03" Type="string" />
-    <Field Name="Field04" Type="int" />
-    <Field Name="Field05" Type="int" />
-    <Field Name="Field06" Type="string" />
-    <Field Name="Field07" Type="int" />
-    <Field Name="Field08" Type="int" />
-    <Field Name="Field09" Type="int" />
-    <Field Name="Field10" Type="int" />
-    <Field Name="Field11" Type="int" />
-    <Field Name="Field12" Type="int" />
-    <Field Name="Field13" Type="int" />
-    <Field Name="Field14" Type="int" />
-    <Field Name="Field15" Type="int" />
-    <Field Name="Field16" Type="int" />
-    <Field Name="Field17" Type="int" />
   </Table>
   <Table Name="ChrClassesXPowerTypes" Build="18414">
     <Field Name="ID" Type="int" IsIndex="true" />
@@ -2403,23 +2383,23 @@
     <Field Name="Field04" Type="uint" />
   </Table>
   <Table Name="SoundEntries" Build="18414">
-	<Field Name="ID" Type="int" IsIndex="true" />
-	<Field Name="SoundType" Type="int" />
-	<Field Name="Name" Type="string" />
-	<Field Name="FileDataId" Type="int" ArraySize="10" />
-	<Field Name="Freq" Type="int" ArraySize="10" />
-	<Field Name="Volumefloat" Type="float" />
-	<Field Name="Flags" Type="int" />
-	<Field Name="MinDistance" Type="float" />
-	<Field Name="DistanceCutoff" Type="float" />
-	<Field Name="EAXDef" Type="int" />
-	<Field Name="SoundEntriesAdvancedID" Type="int" />
-	<Field Name="Volumevariationplus" Type="float" />
-	<Field Name="Volumevariationminus" Type="float" />
-	<Field Name="Pitchvariationplus" Type="float" />
-	<Field Name="Pitchvariationminus" Type="float" />
-	<Field Name="Pitchadjust" Type="float" />
-	<Field Name="DialogType" Type="int" />
+    <Field Name="ID" Type="int" IsIndex="true" />
+    <Field Name="SoundType" Type="int" />
+    <Field Name="Name" Type="string" />
+    <Field Name="FileDataId" Type="int" ArraySize="10" />
+    <Field Name="Freq" Type="int" ArraySize="10" />
+    <Field Name="Volumefloat" Type="float" />
+    <Field Name="Flags" Type="int" />
+    <Field Name="MinDistance" Type="float" />
+    <Field Name="DistanceCutoff" Type="float" />
+    <Field Name="EAXDef" Type="int" />
+    <Field Name="SoundEntriesAdvancedID" Type="int" />
+    <Field Name="Volumevariationplus" Type="float" />
+    <Field Name="Volumevariationminus" Type="float" />
+    <Field Name="Pitchvariationplus" Type="float" />
+    <Field Name="Pitchvariationminus" Type="float" />
+    <Field Name="Pitchadjust" Type="float" />
+    <Field Name="DialogType" Type="int" />
   </Table>
   <Table Name="Spell" Build="18414">
     <Field Name="ID" Type="int" IsIndex="true" />
@@ -2575,7 +2555,7 @@
     <Field Name="Field04" Type="int" />
     <Field Name="Field05" Type="int" />
   </Table>
-    <Table Name="SpellMisc" Build="18414">
+  <Table Name="SpellMisc" Build="18414">
     <Field Name="ID" Type="int" IsIndex="true" />
     <Field Name="SpellId" Type="int" />
     <Field Name="Unk" Type="int" />
@@ -2759,7 +2739,7 @@
     <Field Name="ID" Type="int" IsIndex="true" />
     <Field Name="Field01" Type="string" />
   </Table>
-    <Table Name="Vehicle" Build="18414">
+  <Table Name="Vehicle" Build="18414">
     <Field Name="ID" Type="uint" IsIndex="true" />
     <Field Name="Flags" Type="uint" />
     <Field Name="UnkName" Type="string" />
@@ -2767,7 +2747,7 @@
     <Field Name="PitchSpeed" Type="float" />
     <Field Name="PitchMin" Type="float" />
     <Field Name="PitchMax" Type="float" />
-    <Field Name="SeatID" Type="uint" ArraySize="8"/>
+    <Field Name="SeatID" Type="uint" ArraySize="8" />
     <Field Name="MouseLookOffsetPitch" Type="float" />
     <Field Name="CameraFadeDistScalarMin" Type="float" />
     <Field Name="CameraFadeDistScalarMax" Type="float" />
@@ -2781,10 +2761,10 @@
     <Field Name="MissileTargetArcSpeed" Type="float" />
     <Field Name="MissileTargetArcRepeat" Type="float" />
     <Field Name="MissileTargetArcWidth" Type="float" />
-    <Field Name="MissileTargetImpactRadius" Type="float" ArraySize="2"/>
+    <Field Name="MissileTargetImpactRadius" Type="float" ArraySize="2" />
     <Field Name="MissileTargetArcTexture" Type="string" />
     <Field Name="MissileTargetImpactTexture" Type="string" />
-    <Field Name="MissileTargetImpactModel" Type="string" ArraySize="2"/>
+    <Field Name="MissileTargetImpactModel" Type="string" ArraySize="2" />
     <Field Name="CameraYawOffset" Type="float" />
     <Field Name="UILocomotionType" Type="uint" />
     <Field Name="MissileTargetImpactTexRadius" Type="float" />

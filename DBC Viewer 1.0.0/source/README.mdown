@@ -1,0 +1,13 @@
+Утилита для просмотра DBC файлов клиента. Изначально планировалась поддержка только DBC формата, но позже была также добавлена поддержка форматов DB2 ('WDB2', 'WDB3', 'WDB4', 'WDB5'), ADB ('WCH2', клиент 4.х+) и WDB.
+
+Для открытия файла требуется указать его структуру в xml файлах, находящихся в папке [definitions][]. В данный момент имеются структуры лишь для небольшого числа dbc файлов.
+
+Имеется возможность экспорта в sql, а так же интерфейс для написания плагинов экспорта в другие форматы (csv, xml и т.д.) Для примера можно посмотреть [исходник][Export2SQL.cs] экспортера в sql.
+
+Также имеется возможность редактирования файлов DB2 (только WDB5).
+
+Для запуска утилиты требуется [Microsoft .NET Framework 4.6.1][].
+
+[definitions]: http://github.com/tomrus88/dbcviewer/blob/master/DBC%20Viewer/definitions
+[Export2SQL.cs]: http://github.com/tomrus88/dbcviewer/blob/master/Export2SQL/Export2SQL.cs
+[Microsoft .NET Framework 4.6.1]: https://www.microsoft.com/en-us/download/details.aspx?id=49982

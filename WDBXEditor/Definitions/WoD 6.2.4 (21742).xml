@@ -1639,7 +1639,7 @@
   <Table Name="GarrFollowerQuality" Build="21742">
     <Field Name="ID" Type="int" IsIndex="true" />
     <Field Name="Field01" Type="ushort" />
-	<Field Name="Padding" Type="ushort"/>
+    <Field Name="Padding" Type="ushort" />
     <Field Name="Field02" Type="byte" />
     <Field Name="Field03" Type="byte" />
     <Field Name="Field04" Type="byte" />
@@ -4185,8 +4185,8 @@
   <Table Name="SpellCategory" Build="21742">
     <Field Name="ID" Type="int" IsIndex="true" />
     <Field Name="Flags" Type="int" />
-    <Field Name="UsesPerWeek" Type="byte" Padding="3" />
-	<Field Name="Padding" Type="byte" ArraySize="3" />
+    <Field Name="UsesPerWeek" Type="byte" />
+    <Field Name="Padding" Type="byte" ArraySize="3" />
     <Field Name="Name_Lang" Type="string" />
     <Field Name="MaxCharges" Type="int" />
     <Field Name="ChargeRecoveryTime" Type="int" />
@@ -5174,7 +5174,7 @@
     <Field Name="Field01" Type="string" />
     <Field Name="Field02" Type="byte" />
     <Field Name="Field03" Type="byte" />
-	<Field Name="Padding" Type="byte" ArraySize="2" />
+    <Field Name="Padding" Type="byte" ArraySize="2" />
     <Field Name="Field04" Type="int" />
   </Table>
   <Table Name="WbPermissions" Build="21742">

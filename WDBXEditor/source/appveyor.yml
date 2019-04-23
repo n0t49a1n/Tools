@@ -1,0 +1,17 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+configuration:
+  - Release
+before_build:
+  - nuget restore
+build:
+  parallel: true
+  project: WDBXEditor.sln
+  verbosity: quiet
+after_build:
+  - ps: rm .\WDBXEditor\bin\Release\*.pdb
+  - ps: rm .\WDBXEditor\bin\Release\System.Threading.Tasks.Dataflow.xml
+  - 7z a WDBXEditor.zip %APPVEYOR_BUILD_FOLDER%\WDBXEditor\bin\Release
+artifacts:
+  - path: WDBXEditor.zip
+    name: WDBXEditor

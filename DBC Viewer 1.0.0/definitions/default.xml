@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<DBFilesClient>
+  <Table Name="map" Build="28377">
+    <Field Name="field0" Type="int"  IsIndex="true" />
+    <Field Name="field1" Type="int" />
+    <Field Name="field2" Type="int" />
+    <Field Name="field3" Type="int" />
+    <Field Name="field4" Type="int" />
+    <Field Name="field5" Type="int" />
+    <Field Name="field6" Type="int" />
+    <Field Name="field7" Type="int" />
+    <Field Name="field8" Type="int" />
+    <Field Name="field9" Type="int" />
+    <Field Name="field10" Type="int" />
+    <Field Name="field11" Type="int" />
+    <Field Name="field12" Type="int" />
+    <Field Name="field13" Type="int" />
+    <Field Name="field14" Type="int" />
+	    <Field Name="field15" Type="int" />
+		    <Field Name="field16" Type="int" />
+  </Table>
+</DBFilesClient>
